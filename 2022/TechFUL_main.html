@@ -1,0 +1,3307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://techful-programming.com/user/event/session/c5z5IzMj -->
+<html lang="ja" data-redeviation-bs-uid="88828"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://techful-programming.com/static/assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="https://techful-programming.com/static/assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    TechFUL
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+  <!--     Fonts and icons     -->
+  <link href="./TechFUL_main_files/css" rel="stylesheet">
+  <link rel="stylesheet" href="./TechFUL_main_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="./TechFUL_main_files/icon" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="./TechFUL_main_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./TechFUL_main_files/dropzone.min.css" rel="stylesheet">
+
+  <link href="./TechFUL_main_files/base.css" rel="stylesheet">
+  <link href="./TechFUL_main_files/icofont.min.css" rel="stylesheet">
+
+  <!-- markdownのcode blockにhighlightを追加 2021/09/28 -->
+  <link href="./TechFUL_main_files/prism.css" rel="stylesheet">
+  
+  
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./TechFUL_main_files/uwt.js"></script><script async="" src="./TechFUL_main_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140217860-2');
+</script>
+
+
+<!-- Hotjar Tracking Code for https://techful-programming.com -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:1583042,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./TechFUL_main_files/hotjar-1583042.js"></script>
+<script src="./TechFUL_main_files/marked.min.js"></script>
+<script src="./TechFUL_main_files/purify.min.js"></script>
+<!-- markdownのcode blockにhighlightを追加 2021/09/28 -->
+<script src="./TechFUL_main_files/prism.js"></script>
+
+  
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tech_ful">
+<meta property="og:url" id="pageUrl" content="https://techful-programming.com/user/event/session/c5z5IzMj">
+<meta property="og:title" id="twitterCardTitle" content="2022SangiAwardプログラミング部門">
+<meta property="og:description" content="SangiAward2022本番用セッション">
+<meta property="og:image" content="/static/assets/img/twitter_card_hack.svg">
+
+
+  
+
+<style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible,body>iframe#redeviation-bs-overlay.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos='right']{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos='right']>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{background:transparent}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#redeviation-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;color-scheme:normal !important;speak:none;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(350px + 50px)}body>iframe#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+
+
+<body class="index-page sidebar-collapse">
+
+
+<style>
+.nav-link {
+    font-size:14px;
+}
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0em;
+}
+.name {
+    width: 230px;  
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;  
+}
+.fullheight {
+    min-height: 73vh;
+}
+/* 画面の最小heightを縦いっぱいにできるように設定 */
+#ex4 .p1[data-count]:after{
+    position:absolute;
+    right: 0%;
+    top:0%;
+    content: attr(data-count);
+    font-size:40%;
+    padding: 13%;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    background:red;
+    text-align:center;
+    min-width: 1em;
+}
+[v-cloak]{
+    display: none;
+}
+
+
+/* =======================================
+# DropZone
+======================================= */
+.dropzone {
+    /* border: 0.0625rem solid #c6ccd6; */
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0.5rem;
+    background-color: #f9f9fb;
+    display: block;
+    text-align: center;
+}
+
+.dropzone .dropzone-container {
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8c96a8;
+    z-index: 20;
+}
+
+.dropzone .dropzone-container .dropzone-title {
+    padding-top: 1.5rem;
+}
+
+.dropzone .dropzone-container .browse {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.dropzone .file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.file-icon {
+    position: relative;
+    width: 4rem;
+    height: 5.25rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.file-icon,
+.file-icon:before,
+.file-icon:after {
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    border: 0.125rem solid #b8bec9;
+}
+
+.file-icon:before,
+.file-icon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.125rem solid #ccd0d8;
+}
+
+.file-icon:before {
+    left: -0.625rem;
+    top: 0.5rem;
+    z-index: -1;
+}
+
+.file-icon:after {
+    top: -0.25rem;
+    right: -0.25rem;
+    left: auto;
+    width: 0;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+    border-style: solid;
+    border-color: #f9f9fb #f9f9fb #b8bec9 #b8bec9;
+}
+
+</style>
+<!-- DropZone icon用 -->
+<link href="./TechFUL_main_files/css(1)" rel="stylesheet">
+<link href="./TechFUL_main_files/icon" rel="stylesheet">
+<link rel="stylesheet" href="./TechFUL_main_files/dropzone.min(1).css">
+<!-- DropZone icon用 -->
+
+
+<style>
+nav .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+nav .dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.nav-item.nav-item-icon {
+    display: block;
+}
+
+.nav-item.nav-item-text {
+  display: none;
+}
+.dropdown-menu{
+  margin-top:0;
+}
+
+
+  @media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+    
+    .nav-item.nav-item-icon {
+      display: block;
+    }
+    .nav-item.nav-item-text {
+      display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+/* 768pxまでの幅の場合に適応される */
+   
+    .nav-item.nav-item-icon {
+      display: block;
+    }
+    .nav-item.nav-item-text {
+      display: none;
+    }
+    .main-nav-item {
+      padding-left: 1rem!important;
+      padding-right: 1rem!important;
+      color: rgba(0,0,0,.5) !important;
+    }
+}
+@media screen and (max-width: 480px) {
+/* 480pxまでの幅の場合に適応される */
+   
+    .nav-item.nav-item-icon {
+    display: none;
+    }
+    .nav-item.nav-item-text {
+    display: block;
+    }
+    .main-nav-item {
+      padding-left: 1rem!important;
+      padding-right: 1rem!important;
+      color: rgba(0,0,0,.5) !important;
+    }
+}
+@media screen and (max-width: 320px) {
+/* 320pxまでの幅の場合に適応される */
+    
+    .nav-item.nav-item-icon {
+    display: none;
+    }
+    .nav-item.nav-item-text {
+    display: block;
+    }
+    .main-nav-item {
+      padding-left: 1rem!important;
+      padding-right: 1rem!important;
+      color: rgba(0,0,0,.5) !important;
+    }
+}
+</style>
+<!-- 一般ユーザー用ナブヘッダー -->
+
+<nav class="navbar navbar-expand-lg navbar-light border-bottom p-1" id="navbar">
+  <a class="navbar-brand text-primary font-weight-bold px-5" style="font-size: 18px;" href="https://techful-programming.com/">
+    TechFUL
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item main-nav-item">
+        <a class="nav-link" href="https://techful-programming.com/user/skill">
+          <div class="text-primary">
+            プログラミング問題
+          </div>
+        </a>
+      </li>
+      <li class="nav-item main-nav-item">
+        <a class="nav-link" href="https://techful-programming.com/user/event/list">
+          <div class="text-primary">
+          イベント
+          </div>
+        </a>
+      </li>
+      <li class="nav-item main-nav-item">
+        <a class="nav-link" href="https://techful-programming.com/user/job/list">
+          <div class="text-primary">
+            求人
+          </div>
+        </a>
+      </li>
+    </ul>
+    
+    <ul class="navbar-nav">
+
+      <li class="nav-item my-auto mr-auto nav-item-text">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/account/user/portfolio/17291" target="_blank">
+          <div>ポートフォリオ</div>
+        </a>
+      </li>
+
+      <li class="nav-item my-auto mr-auto nav-item-icon">
+        <a class="nav-link text-center" href="https://techful-programming.com/account/user/portfolio/17291" target="_blank">
+          <i class="text-primary fas fa-chart-pie" rel="" title="" data-toggle="tooltip" style="padding: 8%;" data-original-title="可視化されたスキルが反映されます"></i>
+          <div class="text-primary">
+            ポートフォリオ
+          </div>
+        </a>
+      </li>
+
+
+      <li class="nav-item my-auto mr-auto nav-item-icon">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/user/scout/list">
+          <i class="text-primary fas fa-calendar-alt" rel="" data-toggle="tooltip" title="" style="padding: 14%;" data-original-title="進行中の選考を管理します"></i>
+          <div class="text-primary">
+            選考管理
+          </div>
+        </a>
+      </li>
+
+      <li class="nav-item my-auto mr-auto nav-item-text">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/user/scout/list">
+          <div>選考管理</div>
+        </a>
+      </li>
+      <li class="nav-item my-auto mr-auto nav-item-icon">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/chat/" target="_blank">
+          <div id="ex4">
+            <span id="chat-tag" class="p1 fa-stack fa-1x has-badge" data-count="1">
+              <i class="p3 far fa-comment text-primary" data-count="4b"></i>
+            </span>
+          </div>
+          <div class="text-primary">
+            チャット
+          </div>
+        </a>
+      </li>
+      <li class="nav-item my-auto mr-auto nav-item-text">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/chat/" target="_blank">
+          <div id="ex4">
+            <span id="chat-tag">
+              <div>チャット</div>
+            </span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item my-auto mr-auto nav-item-icon">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/info/list" target="_blank">
+          <div id="ex4">
+            <span id="notice-tag" class="p1 fa-stack fa-1x has-badge">
+              <i class="p3 fas fa-bell fa-stack-1x xfa-inverse text-primary" data-count="4b"></i>
+            </span>
+          </div>
+          <div class="text-primary">
+            お知らせ
+          </div>
+        </a>
+      </li>
+      <li class="nav-item my-auto mr-auto nav-item-text">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/info/list" target="_blank">
+          <div id="ex4">
+            <span id="notice-tag">
+              <div>お知らせ</div>
+            </span>
+          </div>
+        </a>
+      </li>
+
+      <li class="nav-item my-auto mr-auto nav-item-icon dropdown">
+
+        <a class="nav-link dropdown-toggle text-center" href="https://techful-programming.com/user/event/session/c5z5IzMj#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          
+          
+            
+              <img src="./TechFUL_main_files/JP.png" class="mx-auto" style="object-fit: cover; margin-bottom: 2px;" alt="">日本語
+            
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+           <form action="https://techful-programming.com/i18n/setlang/" method="post" id="user-lang-change">
+             <input type="hidden" name="csrfmiddlewaretoken" value="NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z">
+            <input name="next" type="hidden" value="">
+            <input name="language" type="hidden" value="">
+              
+              
+              
+              
+               
+                 <a class="dropdown-item" href="https://techful-programming.com/user/event/session/c5z5IzMj#" onclick="selectLangSubmit(&#39;user-lang-change&#39;, &#39;ja&#39;)">
+                   <img src="./TechFUL_main_files/JP.png" class="mx-auto" style="object-fit: cover; margin-bottom: 2px;" alt="japan-flag">
+                   日本語
+                 </a>
+               
+              
+               
+                  <a class="dropdown-item" href="https://techful-programming.com/user/event/session/c5z5IzMj#" onclick="selectLangSubmit(&#39;user-lang-change&#39;, &#39;en&#39;)">
+                    <img src="./TechFUL_main_files/GB.png" class="mx-auto" style="object-fit: cover; margin-bottom: 2px;" alt="japan-flag">
+                    English
+                  </a>
+               
+              
+          </form>
+
+        </div>
+      </li>
+      <li class="nav-item my-auto mr-auto nav-item-text">
+        <a class="nav-link text-center px-3" href="https://techful-programming.com/user/scout/list">
+          <img src="./TechFUL_main_files/JP.png" class="mx-auto" style="object-fit: cover; margin-bottom: 2px;" alt="japan-flag">
+          日本語/&nbsp;<img src="./TechFUL_main_files/GB.png" class="mx-auto" style="object-fit: cover; margin-bottom: 2px;" alt="japan-flag">
+          English
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle px-3" href="https://techful-programming.com/user/event/session/c5z5IzMj#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="./TechFUL_main_files/ダウンロード_Vj4DF3g.png" class="mx-auto rounded-circle col-xs-6" style="width: 50px; height: 50px; object-fit: cover;" alt="">
+          <!-- Dropdown link -->
+        </a>
+        <div class="dropdown-menu dropdown-menu-right mr-2 py-4" aria-labelledby="navbarDropdownMenuLink" style="min-width: 15rem !important;">
+         <div class="dropdown-item" style="pointer-events: none;">
+          <h4 id="accountName" style="font-size: 1.3rem; word-break: break-all; white-space: normal;">hutaonekomata</h4>
+         </div>
+          <a class="dropdown-item" href="https://techful-programming.com/account/user/profile/16995">
+            アカウント情報
+          </a>
+          <a class="dropdown-item" href="https://techful-programming.com/chat/">
+            チャット
+          </a>
+          <a class="dropdown-item" href="https://techful-programming.com/help/user" target="_blank">
+            操作方法
+          </a>
+          <a class="dropdown-item" href="https://techful-programming.com/user/TechFUL/term/" target="_blank">
+            利用規約
+          </a>
+          <a class="dropdown-item" href="https://techful-programming.com/contact">
+            お問い合わせ・ご意見
+          </a>
+          <a class="dropdown-item" href="https://techful-programming.com/account/logout">
+            ログアウト
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 一般ユーザー用ナブヘッダー ここまで-->
+
+<!-- 学校管理者用ナブヘッダー -->
+
+<!-- 学校管理者用ナブヘッダー -->
+
+
+<!-- 企業管理者用ナブヘッダー -->
+
+
+
+
+
+<!-- 444スタッフ用ヘッダー -->
+
+
+
+
+
+<!-- スキルチェック用ヘッダー -->
+
+<script>
+  window.onload = changeAccountNameStyle;
+ 
+  function changeAccountNameStyle(){
+    var account = document.getElementById("accountName");
+    var accountNameText = document.getElementById("accountName").innerHTML;
+    if (accountNameText.length > 12) {
+     account.style.fontSize = "1.3rem";
+     account.style.wordBreak = "break-all";
+     account.style.whiteSpace = "normal";
+     if (accountNameText.length > 20) {
+       account.style.fontSize = "1.2rem";
+     }
+   }
+ } 
+ 
+ </script>
+<nav class="pb-3 pt-3 bg-normal border-bottom" id="page_title">
+  
+  <h4 class="container mb-0"> 
+    
+  </h4>
+</nav>
+
+
+
+  
+
+  
+
+<style>
+  th, td{
+    vertical-align: middle !important;
+  }
+  
+  #page_title {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .problem-card:hover {
+    background: rgb(243, 246, 248) !important;
+  }
+
+  .left_padding {
+    padding-left: 5rem;
+  }
+
+  .user_name {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+
+  /*DIGITAL CLOCK FONT*/
+  @font-face {
+    font-family: 'digital-7';
+    src: url('/static/assets/fonts/digital-7.ttf');
+  }
+
+  .ui-input-container {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ui-form-input-container {
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .ui-form-input {
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 2px solid #1a73e8;
+    outline: 0;
+    width: 100%;
+  }
+
+  .form-input-label {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.85rem;
+    padding-right: 0.33rem;
+    padding-left: 0.33rem;
+    background: #fff;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+
+  .ui-form-btn {
+    padding: 13px 15px;
+    border-radius: 8px;
+    background: #1a73e8;
+    outline: 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .note {
+    min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: #586069;
+    cursor: pointer;
+  }
+  .tooltip-inner{
+    max-width: 100%;
+  }
+  
+  #submit-history td {
+    min-width: 150px;
+  }
+
+  /* スキルチェックアカウントのランキング表の設定 2021/09/13 */
+  .table-pagenation {
+    display: block;
+    width: 60%;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<!-- サーティファイ用試験タイマー用 css -->
+
+<link href="./TechFUL_main_files/flag-icon.css" rel="stylesheet">
+<header class="bg-dark pt-2 pb-2" style="background-image: url(/static/assets/img/background_image.png);">
+  <div class="container text-light py-4">
+    
+       <a class="text-light" href="https://techful-programming.com/user/event/2664">
+        &lt;- 戻る</a>
+      
+      <h3 class="text-center">SangiAward2022本番用セッション</h3>
+      <p class="text-center h6 mb-1">イベントタイトル: 2022SangiAwardプログラミング部門</p>
+      <p class="text-center h6 mb-2">イベントテーマ: </p>
+    
+  </div>
+  <div class="container pb-2">
+    <p class="text-light h6 mb-1">2022-03-20(日) 13:30 〜 2022-03-20(日) 14:30</p>
+    <p class="text-light h6 mb-2">問題数：19問</p>
+    <span class="badge badge-white border border-light bg-transparent text-light">開催場所：静岡産業技術専門学校</span>
+
+    
+    <span class="badge badge-white border border-light bg-transparent text-light">オンライン</span>
+    
+  </div>
+</header>
+
+
+<!-- セッションが検定試験用の時 -->
+
+
+
+<section class="fullheight">
+
+  <div id="tabs" class="nav nav-tabs-navigation justify-content-center pt-5 pb-0"><div class="nav-tabs-wrapper"><ul data-tabs="tabs" class="nav nav-tabs nav-tabs-primary"><li class="nav-item"><a href="https://techful-programming.com/user/event/session/c5z5IzMj#event_overview" data-toggle="tab" class="nav-link">イベント概要</a></li> <li class="nav-item"><a href="https://techful-programming.com/user/event/session/c5z5IzMj#content" data-toggle="tab" class="nav-link active">セッション</a></li> <li class="nav-item"><a href="https://techful-programming.com/user/event/session/c5z5IzMj#thread" data-toggle="tab" class="nav-link badge1">スレッド</a></li> <li class="nav-item"><a href="https://techful-programming.com/user/event/session/c5z5IzMj#score" data-toggle="tab" class="nav-link">解答状況</a></li> <li class="nav-item"><a href="https://techful-programming.com/user/event/session/c5z5IzMj#submit-history" data-toggle="tab" class="nav-link">コード提出履歴</a></li></ul></div></div>
+
+  <div class="tab-content text-center">
+    <div class="tab-pane active" id="content">
+      <div class="container pt-0 pb-5">
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-right-0 border-top-0 border-bottom-0 announcement-modal">
+              <form method="POST" action="https://techful-programming.com/user/event/session/c5z5IzMj" class="ml-auto w-100">
+                <div class="modal-header">
+                  <div class="ui-input-container">
+                    <label class="ui-form-input-container">
+                      <input class="ui-form-input" id="word-count-input" name="display_name" required="">
+                      <span class="form-input-label">ランキング用の名前を設定してください。</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="modal-footer d-block bg-light py-3 px-3 text-right">
+                  <button class="btn font-weight-bold py-2 px-3 rounded" type="submit" name="update_display_name" value="1" style="color: #0a0091; background-color: #ebeefa !important; font-size: 15px;">
+                    設定する
+                  </button>
+                </div>
+                <input type="hidden" name="csrfmiddlewaretoken" value="NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z">
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- 検証 -->
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <!-- まだセッションが始まってないときケース -->
+            
+            
+            <div class="container pb-4">
+              <h4 class="text-primary text-center title pb-3">セッション時間:
+                03月20日 13:30 ~ 03月20日 14:30</h4>
+              <h5 class="text-dark" style="line-height:2;">
+                セッションは終了しました。<br>お疲れ様でした。</h5>
+            </div>
+            
+
+            
+
+            <div class="text-right mb-2">
+              <a href="https://techful-programming.com/faq/problem" target="_blank">
+                <i class="icofont icofont-info-circle mr-1 text-primary"></i>問題FAQ
+              </a>
+            </div>
+            
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19551">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  CTCC
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 1</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  10分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-success" style="position:absolute;bottom:5px;right:16px;">
+                                  合格
+                                  <i class="now-ui-icons ui-1_check text-success"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19568">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  アル[カケキ]ン
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 2</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  20分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-success" style="position:absolute;bottom:5px;right:16px;">
+                                  合格
+                                  <i class="now-ui-icons ui-1_check text-success"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19558">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  切り上げ
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 2</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  20分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-success" style="position:absolute;bottom:5px;right:16px;">
+                                  合格
+                                  <i class="now-ui-icons ui-1_check text-success"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19556">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  協力ゲーム
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 2</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  20分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-success" style="position:absolute;bottom:5px;right:16px;">
+                                  合格
+                                  <i class="now-ui-icons ui-1_check text-success"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/15395">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  最大体積の円柱
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 2</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  20分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14265">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  Divisor
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">数学</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 2</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  20分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-success" style="position:absolute;bottom:5px;right:16px;">
+                                  合格
+                                  <i class="now-ui-icons ui-1_check text-success"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/15130">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  方眼チョコ
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/15125">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  交代交代
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14637">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  整列競争
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14610">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  N進数の桁和
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14218">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  Slide Array
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">プログラミング基礎</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14217">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  TODO
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-success">初級</span>
+                                
+
+                                <span class="badge badge-light">難易度 3</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  30分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19557">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  略称
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 4</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  40分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/19369">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  お菓子祭り
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 4</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  40分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/15119">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  文字列移動
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 4</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  40分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/18772">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  Bomb on Grid
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 5</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  50分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/15475">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  登山
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 5</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  50分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/13801">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  Make Loop
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 5</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  50分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+            
+            <a href="https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/13793">
+              
+                            <div class="bg-white my-0 border text-left problem-card" style="position:relative;">
+                              <div class="card-body pb-3">
+                                <p class="card-subtitle badge badge-neutral text-primary" style="position:absolute;top:16px;right:16px;">
+                                  コーディング問題
+                                </p>
+                                <h5 class="mb-3 text-secondary ml-2">
+                                  
+                                  島の旗立て
+                                  
+                                </h5>
+                                <span class="badge text-dark border border-white bg-white px-2">アルゴリズム</span>
+
+                                
+                                <span class="badge badge-neutral bg-white text-primary">中級</span>
+                                
+
+                                <span class="badge badge-light">難易度 6</span>
+
+                                
+                                <span class="badge badge-neutral bg-white" style="color:#444!important;">目標解答時間/
+                                  60分</span>
+                                
+
+                                
+
+                                <!-- コーディング解答 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <span class="badge badge-neutral text-primary" style="position:absolute;bottom:5px;right:16px;">
+                                  解答中
+                                  <i class="now-ui-icons loader_gear spin text-primary"></i>
+                                </span>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+
+                              </div>
+                            </div>
+                          </a>
+
+
+                          
+                          
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-pane text-left" id="event_overview">
+      <div class="container pt-0 pb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead class="border-bottom">
+                  <tr>
+                  <th scope="col">概要</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <th scope="row">
+                    <p style="white-space: pre-wrap">C,C++,Java,Pythonを使った高校生のプログラミングコンテスト</p> 
+                  </th>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-borderless">
+                <thead class="border-bottom">
+                  <tr>
+                    <th scope="col"> 
+                      主催者
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <th scope="row">
+                    <p style="white-space: pre-wrap">静岡産業技術専門学校管理者１</p>
+                  </th>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-borderless">
+                <thead class="border-bottom">
+                  <tr>
+                    <th scope="col">
+                      テーマ
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <th scope="row">
+                    <p style="white-space: pre-wrap"></p>
+                  </th>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="thread">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab-pane" id="score">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="text-center">
+              <h5 class="p-3">問題数: <b class="text-dark font-weight-bold mr-2">19</b>合格:
+                <b class="text-dark font-weight-bold">5</b>
+              </h5>
+            </div>
+            <table class="table">
+              <thead>
+                <tr class="text-secondary bg-light">
+                  <th style="font-size:14px;">#</th>
+                  <th class="pl-3" style="width:41.6%;font-size:14px;">問題名</th>
+                  <th style="font-size:14px;">問題区分</th>
+                  <th style="font-size:14px;">合否</th>
+                  <th style="font-size:14px;">スコア</th>
+                  <th style="font-size:14px;" class="text-center">-</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                
+                <tr>
+                  <td class="align-middle">1</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    CTCC</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-success">合格 <i class="now-ui-icons ui-1_check text-success"></i></span>
+                  </td>
+                  <td class="align-middle">22</td>
+                  
+                    
+                      <td class="text-center"><span class="text-secondary">○</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">2</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    アル[カケキ]ン</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-success">合格 <i class="now-ui-icons ui-1_check text-success"></i></span>
+                  </td>
+                  <td class="align-middle">44</td>
+                  
+                    
+                      <td class="text-center"><span class="text-secondary">○</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">3</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    切り上げ</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-success">合格 <i class="now-ui-icons ui-1_check text-success"></i></span>
+                  </td>
+                  <td class="align-middle">44</td>
+                  
+                    
+                      <td class="text-center"><span class="text-secondary">○</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">4</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    協力ゲーム</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-success">合格 <i class="now-ui-icons ui-1_check text-success"></i></span>
+                  </td>
+                  <td class="align-middle">42</td>
+                  
+                    
+                      <td class="text-center"><span class="text-secondary">○</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">5</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    最大体積の円柱</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">6</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    Divisor</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-success">合格 <i class="now-ui-icons ui-1_check text-success"></i></span>
+                  </td>
+                  <td class="align-middle">44</td>
+                  
+                    
+                      <td class="text-center"><span class="text-secondary">○</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">7</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    方眼チョコ</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">9</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">8</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    交代交代</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">6</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">9</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    整列競争</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">6</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">10</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    N進数の桁和</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">11</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    Slide Array</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">12</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    TODO</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">13</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    略称</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">14</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    お菓子祭り</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">15</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    文字列移動</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">16</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    Bomb on Grid</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">17</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    登山</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">18</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    Make Loop</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+                <tr>
+                  <td class="align-middle">19</td>
+                  <td class="align-middle text-left pl-3" style="width:41.6%;">
+                    島の旗立て</td>
+                  <td class="align-middle">
+                    
+                      コーディング
+                    
+                  </td>
+                  <td class="align-middle text-center"><span class="text-secondary">解答中 <i class="now-ui-icons loader_gear spin text-secondary"></i></span>
+                  </td>
+                  <td class="align-middle">0</td>
+                  
+                    
+                      <td class="text-center"><span class="text-black">-</span></td>
+                    
+                  
+                </tr>
+                
+              </tbody>
+
+              <tbody class="bg-white">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="submit-history" class="tab-pane"><div class="pb-5 table-responsive"><table class="table"><thead><tr class="text-secondary bg-light"><th>#</th> <th>問題名</th> <th>問題区分</th> <th>言語</th> <th>最長実行時間</th> <th>通過ケース</th> <th>スコア</th> <th>解答所要時間</th> <th>採点対象</th> <th class="text-center">-</th></tr></thead> <tbody></tbody></table></div></div>
+    
+    
+    
+  </div>
+  <form id="forcePost" name="force" action="https://techful-programming.com/user/event/session/c5z5IzMj" method="post">
+    <input type="hidden" name="force_end" value="1">
+    <input type="hidden" name="csrfmiddlewaretoken" value="NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z">
+  </form>
+
+</section>
+
+
+
+  <footer class="footer pt-3 pb-1 text-primary bg-normal text-center">
+  <div class="container text-primary">
+    <h5 class="mt-0 mb-3 d-inline-block">2017 <a href="https://triple-four.com/" target="_blank">444 Inc.</a> all rights reserved</h5>
+  </div>
+</footer>
+  <form action="https://techful-programming.com/account/redirect" method="post" id="account-redirect">
+  <input type="hidden" id="id_password_set" name="password_set" value="0">
+  <input type="hidden" id="id_profile_completed" name="profile_completed" value="0">
+<input type="hidden" name="csrfmiddlewaretoken" value="NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z">
+</form>
+  
+<!--   Core JS Files   -->
+<script src="./TechFUL_main_files/jquery.min.js" type="text/javascript"></script>
+<script src="./TechFUL_main_files/popper.min.js" type="text/javascript"></script>
+<script src="./TechFUL_main_files/bootstrap.min.js" type="text/javascript"></script>
+<!-- Vue import -->
+<script src="./TechFUL_main_files/vue.min.js"></script>
+<!-- Axios import -->
+<script src="./TechFUL_main_files/axios.min.js"></script>
+<!-- Countdown by Vue.js -->
+<script src="./TechFUL_main_files/vue-countdown.js"></script>
+<!-- D3.js  -->
+<script src="./TechFUL_main_files/d3.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="./TechFUL_main_files/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="./TechFUL_main_files/nouislider.min.js" type="text/javascript"></script>
+<script src="./TechFUL_main_files/bootstrap-material-design.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="./TechFUL_main_files/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async="" defer="" src="./TechFUL_main_files/buttons.js"></script>
+<!-- now-ui-kit -->
+<script src="./TechFUL_main_files/now-ui-kit.js" type="text/javascript"></script>
+<!-- Dropzone -->
+<script src="./TechFUL_main_files/dropzone.min.js" type="text/javascript"></script>
+
+<script src="./TechFUL_main_files/common.js" type="text/javascript"></script>
+
+  
+<script>
+  $('#material-tabs').each(function () {
+    var $active, $content, $links = $(this).find('a');
+    $active = $($links[0]);
+    $active.addClass('active');
+    $content = $($active[0].hash);
+    $links.not($active).each(function () {
+        $(this.hash).hide();
+    });
+
+    $(this).on('click', 'a', function (e) {
+        $active.removeClass('active');
+        $content.hide();
+        $active = $(this);
+        $content = $(this.hash);
+        $active.addClass('active');
+        $content.show();
+        e.preventDefault();
+    });
+});
+  
+    const target = document.getElementById('target');
+    const targetView = document.getElementsByClassName('target-view')[0];
+    const langBtn = document.getElementById('langChange');
+    const langView = document.getElementById('langView');
+    const messageNotifications = document.getElementsByClassName('message-notification');
+    
+    const dataFromBase = {
+      core : {
+        token: 'NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z',
+      },
+      auth : {
+        userId : '17291',
+        userStatus: parseInt('1')
+      },
+      pages: {
+        log: {
+          'log_type': '1',
+          'log_save': 1,
+          'country': 'JP',
+          'city': 'hamamatsu',
+          'device': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
+          'path': '/user/event/session/c5z5IzMj',
+          'page_name': 'event: session_detail',
+        }
+      },
+      doms : {
+        redirectForm: document.getElementById('account-redirect')
+      },
+      post : {
+        config : {
+          headers:{
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type':'application / x-www-form-urlencoded',
+            'X-CSRFToken': 'NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z'
+            },
+          withCredentials:true,
+        },
+        fileConfig: {
+          headers:{
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type':'multipart/form-data',
+            'X-CSRFToken': 'NRkT907oQU3ZuoOdZK7iVCgU2jfPdXInl06xQY2w9vlRrLrDYfmATMYXi83JDo9z'
+            },
+          withCredentials:true,
+        }
+      }
+    };
+    
+    if(langBtn){
+      langBtn.addEventListener('mouseenter', () => {
+        langBtn.classList.add('show');
+        langView.style.display = "block";
+      });
+      
+      langBtn.addEventListener('mouseleave', () => {
+        langView.style.display = "none";
+      });
+    }
+    
+    if(target){
+      target.addEventListener('mouseenter', () => {
+        target.classList.add('show');
+        targetView.style.display = "block";
+      }, false);
+    }
+    
+    if(targetView){
+      targetView.addEventListener('mouseleave', () => {
+          targetView.style.display = "none";
+      }, false);
+    }
+    
+    function fadeOutNotification() {
+      console.log(messageNotifications)
+      if (messageNotifications.length){
+        for (i=1;i<messageNotifications.length+1;i++) {
+          let messageQuery = $('#message-notification' + String(i));
+          setTimeout(function() {
+            messageQuery.fadeOut(500);
+          }, 3000 * i);
+        };
+        
+      }
+    }
+
+    </script>
+    
+    <script>
+    fadeOutNotification();
+
+    function getProcessor(password_set, profile_completed, chat_sum){
+      let normalUserStatusList = [1,2]
+      if (password_set || profile_completed && normalUserStatusList.includes(dataFromBase.auth.userStatus)){
+            document.getElementById('id_password_set').value = password_set;
+            document.getElementById('id_profile_completed').value = profile_completed;
+            dataFromBase.doms.redirectForm.submit()
+          }
+        try {
+          const chatTag = document.getElementById('chat-tag');
+          if (chat_sum){
+            chatTag.setAttribute('data-count', chat_sum);
+          }
+        } catch (error){};
+    }
+    
+    // Change Language
+    let langChangeForm = document.getElementById('lang-change-form');
+    
+    function selectLangSubmit(formId, langId) {
+      document.getElementById(formId).language.value = langId
+      document.getElementById(formId).submit();
+    };
+
+    $.ajax({
+      headers: { "X-CSRFToken": dataFromBase.core.token },
+      type: 'POST',
+      url: '/functions/api/processor',
+      method: 'post',
+      data: dataFromBase.pages.log,
+      dataType:'json'
+    }).fail(function (error, status) {
+        console.log(error)
+    }).done(function (data) {
+      let response = JSON.parse(data);
+      let password_set      = response['password_set'];
+      let profile_completed = response['profile_completed'];
+      const chatSum        = response['chat_sum']
+      getProcessor(password_set, profile_completed, chatSum);
+    });
+    
+    setTimeout(() => {
+      $("#navbarNavDropdown").removeClass("show");
+    }, 1000);
+    
+    </script>
+
+  
+<script src="./TechFUL_main_files/common.js"></script>
+<script>
+
+  const booleanConverter = (value) => {
+    return (value === "True") ? true : false;
+  };
+
+  // ページング用 2021/09/13 
+  var pageNation = {
+    delimiters: ['[[', ']]'],
+    props: ['data'],
+    template: `<nav aria-label="Page navigation example">
+        <ul class="pagination float-right">
+            <li class="page-item" :class="data.previous_page_number ? '' : 'disabled'">
+                <a class="page-link" aria-label="Previous"
+                  @click="triggerEvent(data.previous_page_number)">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active" v-for="n of data.page_count" v-if="n === data.number">
+                <a class="page-link" @click="triggerEvent(n)">[[ n ]]</a>
+            </li>
+            <li class="page-item" v-else>
+                <a class="page-link" @click="triggerEvent(n)">[[ n ]]</a>
+            </li>
+            <li class="page-item" :class="data.next_page_number ? '' : 'disabled'">
+                <a class="page-link" aria-label="Next"
+                @click="triggerEvent(data.next_page_number)">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>`,
+    methods: {
+      triggerEvent(data) {
+        this.$emit('child-event', data);
+      }
+    },
+  };
+
+  // 検定試験タイマー用の処理
+  Vue.component(VueCountdown.name, VueCountdown);
+
+  const Count = new Vue({
+    el: '#time',
+    delimiters: ['[[', ']]'],
+    data: function () {
+      var endtime = parseInt('None');
+      var extendTime = parseInt('None');
+      var leftTime = extendTime - endtime;
+      var time = (endtime < 0) ? extendTime : endtime;
+
+      return {
+        forceTrigger: booleanConverter('None'),
+        counting: false,
+        time: time,
+        now: new Date().getTime(),
+        trigger: true,
+        unOpenedMission: 0,
+        pageStatus: parseInt('3'),
+        endtime: endtime,
+        forceEndtime: leftTime,
+      };
+    },
+    methods: {
+      transform(props) {
+        Object.entries(props).forEach(([key, value]) => {
+          const digits = value < 10 ? `0${value}` : value; // 0 追加
+          word = value < 2 ? key.replace(/s$/, '') : key;
+          props[key] = `${digits}`;
+        });
+        return props;
+      },
+      handleCountdownEnd: function () {
+        (this.forceTrigger) ? this.forceEndEvent() : this.isChangeBgColor();
+        this.forceTrigger = true;
+        this.time = this.forceEndtime;
+        this.isChangeBgColor();
+      },
+      startCountdown: function () {
+        console.log('start!');
+        if (this.forceTrigger) { this.isChangeBgColor() };
+      },
+      isChangeBgColor: function () {
+        setTimeout(() => {
+          $('.clock-top-wrapper').css({ 'background-color': '#8e0101', 'border-color': '#8e0101' });
+        }, 0);
+      },
+      forceEndEvent: function () {
+        $("#forceBtn").click();
+      },
+    },
+  });
+  
+  
+  const tabsVue = new Vue({
+    el: '#tabs',
+    delimiters: ['[[', ']]'],
+    data: function(){
+    },
+    methods: {
+      submitHistoryClick: () => {
+        if(submitAnswerVue.$data.histories){
+
+          sendAsyncGetRequest("/user/event/session/c5z5IzMj/api/get_submit_history")
+          .then(data => {
+            submitAnswerVue.$data.histories = data
+          }).finally(() => {
+            $('[data-toggle="tooltip"]').tooltip();
+          })
+        }
+      },
+      // スキルチェックアカウント用のランキング表示 2021/09/13
+      getSkillcheckRanking: function () {
+        sendAsyncGetRequest('/user/event/session/c5z5IzMj/api/get_skillcheck_ranking?page=' + 1)
+          .then(res => {
+            SkillcheckRanking.$data.ranking = res.ranking;
+            SkillcheckRanking.$data.pageNation = res.pageNation;
+            SkillcheckRanking.$data.user_rank = res.user_rank;
+            SkillcheckRanking.$data.total_user = res.total_user;
+            SkillcheckRanking.$data.is_start = res.is_start;
+            SkillcheckRanking.$data.is_end = res.is_end;
+            // console.log(res.is_start);
+            // console.log(res.is_end);
+            // console.log('/* ------ ランキング情報')
+          });
+      },
+    },
+  })
+  
+  const submitAnswerVue = new Vue({
+    el: '#submit-history',
+    delimiters: ['[[', ']]'],
+    data: function(){
+      let histories = []
+
+      return { histories }
+    },
+  })
+
+  console.log(parseInt('None') + ': 試験時間');
+  console.log(parseInt('None') + ': 超過時間');
+  console.log(parseInt('None') - parseInt('None') + ': 延長時間');
+  console.log(booleanConverter('None'));
+
+  function pageReload() {
+    location.reload()
+  }
+  let user = 'B07';
+  if (user) {
+    console.log('running fine.')
+  } else {
+    $('#exampleModalCenter').modal({ backdrop: 'static', keyboard: false })
+    $('#exampleModalCenter').modal('show')
+  }
+
+  // スキルチェックアカウント用のランキング表示 2021/09/13
+  const SkillcheckRanking = new Vue({
+    el: '#skillcheck_ranking',
+    delimiters: ['[[', ']]'],
+    data: {
+      ranking: [],
+      pageNation: [],
+      user_rank: '',
+      total_user: '',
+      is_start: false,
+      is_end: false,
+    },
+    components: {
+      'page-nation-button': pageNation
+    },
+    methods: {
+      getOtherPageInfo: function (pageNumber) {
+        sendAsyncGetRequest('/user/event/session/c5z5IzMj/api/get_skillcheck_ranking?page=' + pageNumber)
+          .then(res => {
+            this.ranking = res.ranking;
+            this.pageNation = res.pageNation;
+            this.user_rank = res.user_rank;
+            this.total_user = res.total_user;
+            this.is_start = res.is_start;
+            this.is_end = res.is_end;
+            // console.log(res);
+            // console.log('/* ------ ページネーション/ランキング情報')
+          });
+      },
+    },
+  });
+
+</script>
+
+
+
+
+
+  <!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o5ux1');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+
+
+
+<iframe id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left" src="./TechFUL_main_files/saved_resource.html"></iframe><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div></body></html>

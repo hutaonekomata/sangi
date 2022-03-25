@@ -1,0 +1,143 @@
+/*==================================
+吹き出し Style
+====================================*/
+.anchor {
+    position: relative;
+}
+:root {
+    --base-top: 40px;
+    --base-left: 0;
+    --location-top: 0;
+}
+.speech-bubble-wrapper {
+    z-index: 999;
+    min-width: 26vw;
+    max-width: 38vw;
+    position: absolute;
+    top: var(--location-top);
+    left: var(--base-left);
+}
+.speech-bubble-bottom-over-wrapper {
+    position: fixed;
+    right: 10%;
+    width: 50%;
+    bottom: 0;
+    z-index: 999;
+}
+.speech-bubble-ds {
+    background: #FFF;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0 auto 40px;
+    padding: 6px;
+}
+.speech-bubble-ds p {
+    margin-bottom: 10px;
+}
+.speech-bubble-ds p :last-of-type {
+    margin-bottom: 0;
+}
+.speech-bubble-ds__arrow {
+    left: 7px;
+    top: var(--base-top);
+    position: absolute;
+}
+.speech-bubble-ds__arrow::before {
+    border-right: 23px solid #a7a7a7;
+    border-top: 1px solid #a7a7a7;
+    border-bottom: 23px solid transparent;
+    bottom: 2px;
+    content: "";
+    position: absolute;
+    right: 6px;
+}
+.speech-bubble-ds__arrow::after {
+    border-right: 21px solid #fff;
+    border-top: 0px solid transparent;
+    border-bottom: 21px solid transparent;
+    bottom: 4px;
+    content: "";
+    position: absolute;
+    right: 6px;
+}
+
+/*==================================
+右吹き出し Style
+====================================*/
+.speech-bubble-ds__arrow-bottom {
+    border-left: 21px solid transparent;
+    bottom: 17px;
+    position: absolute;
+    right: 15px;
+}
+.speech-bubble-ds__arrow-bottom::before {
+    border-left: 23px solid transparent;
+    border-top: 23px solid #a7a7a7;
+    bottom: 2px;
+    content: "";
+    position: absolute;
+    right: 5px;
+}
+.speech-bubble-ds__arrow-bottom::after {
+    border-right: 21px solid #fff;
+    border-top: 0px solid transparent;
+    border-bottom: 21px solid transparent;
+    bottom: 4px;
+    content: "";
+    position: absolute;
+    right: 6px;
+}
+
+/*==================================
+吹き出し内にあるサブ文章 Style
+====================================*/
+.sub-title {
+    font-size: 15px;
+    color: rgb(167, 167, 167);
+}
+/*==================================
+ブラックレイヤー Style
+====================================*/
+.first-step-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+}
+.tutorial-title {
+    z-index: 999;
+}
+.zIndex {
+    z-index: 999;
+}
+.zIndex-exception {
+    z-index: 300;
+}
+.tutorial-wrapper {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    height: 60%;
+    width: 50%;
+    border-radius: 25px;
+    z-index: 999;
+}
+.result-enter-active,
+.result-leave-active {
+    transition: opacity .5s;
+}
+
+.result-enter,
+.result-leave-to {
+    opacity: 0;
+}

@@ -1,0 +1,48 @@
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+.tooltip2 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.description2 {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.6em;
+  color: #fff;
+  border-radius: 5px;
+  background: #00185e;
+  width: 200px;
+}
+.description2:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 7%;
+  border: 15px solid transparent;
+  border-top: 15px solid #00185e;
+  margin-left: -15px;
+  transform: rotateZ(180deg);
+}
+.tooltip2:hover .description2 {
+  display: inline-block;
+  top: 35px;
+  left: -150px;
+  z-index: 1000;
+}
+#editor {
+  resize: vertical;
+  /* overflow: auto; */
+}
+
+/*DIGITAL CLOCK FONT*/
+@font-face {
+  font-family: 'digital-7';
+  src: url('{% static 'assets/fonts/digital-7.ttf' %}');
+}

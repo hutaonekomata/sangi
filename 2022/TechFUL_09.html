@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://techful-programming.com/user/event/session/c5z5IzMj/problem/coding/14637 -->
+<html lang="ja" data-redeviation-bs-uid="98142"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./TechFUL_09_files/favicon.ico">
+  <link rel="icon" type="image/png" href="./TechFUL_09_files/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    TechFUL
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+  <!--     Fonts and icons     -->
+  <link href="./TechFUL_09_files/css" rel="stylesheet">
+  <link rel="stylesheet" href="./TechFUL_09_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="./TechFUL_09_files/icon" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="./TechFUL_09_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./TechFUL_09_files/dropzone.min.css" rel="stylesheet">
+
+  <link href="./TechFUL_09_files/base.css" rel="stylesheet">
+  <link href="./TechFUL_09_files/icofont.min.css" rel="stylesheet">
+
+  <!-- markdownのcode blockにhighlightを追加 2021/09/28 -->
+  <link href="./TechFUL_09_files/prism.css" rel="stylesheet">
+  
+  
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./TechFUL_09_files/uwt.js"></script><script async="" src="./TechFUL_09_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140217860-2');
+</script>
+
+
+<!-- Hotjar Tracking Code for https://techful-programming.com -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:1583042,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./TechFUL_09_files/hotjar-1583042.js"></script>
+<script src="./TechFUL_09_files/marked.min.js"></script>
+<script src="./TechFUL_09_files/purify.min.js"></script>
+<!-- markdownのcode blockにhighlightを追加 2021/09/28 -->
+<script src="./TechFUL_09_files/prism.js"></script>
+
+  
+
+  
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible,body>iframe#redeviation-bs-overlay.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos='right']{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos='right']>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{background:transparent}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#redeviation-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;color-scheme:normal !important;speak:none;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(350px + 50px)}body>iframe#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style><script async="async" type="text/javascript" src="./TechFUL_09_files/editor.main.js"></script><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {display: block; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-ex-box-test {position: absolute; width: 1px; height: 60ex}
+.mjx-line-box-test {display: table!important}
+.mjx-line-box-test span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+</style><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./TechFUL_09_files/editor.main.css"><script async="async" type="text/javascript" src="./TechFUL_09_files/editor.main.nls.js"></script></head>
+
+
+<body class="index-page sidebar-collapse"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<style>
+.nav-link {
+    font-size:14px;
+}
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0em;
+}
+.name {
+    width: 230px;  
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;  
+}
+.fullheight {
+    min-height: 73vh;
+}
+/* 画面の最小heightを縦いっぱいにできるように設定 */
+#ex4 .p1[data-count]:after{
+    position:absolute;
+    right: 0%;
+    top:0%;
+    content: attr(data-count);
+    font-size:40%;
+    padding: 13%;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    background:red;
+    text-align:center;
+    min-width: 1em;
+}
+[v-cloak]{
+    display: none;
+}
+
+
+/* =======================================
+# DropZone
+======================================= */
+.dropzone {
+    /* border: 0.0625rem solid #c6ccd6; */
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0.5rem;
+    background-color: #f9f9fb;
+    display: block;
+    text-align: center;
+}
+
+.dropzone .dropzone-container {
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8c96a8;
+    z-index: 20;
+}
+
+.dropzone .dropzone-container .dropzone-title {
+    padding-top: 1.5rem;
+}
+
+.dropzone .dropzone-container .browse {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.dropzone .file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.file-icon {
+    position: relative;
+    width: 4rem;
+    height: 5.25rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.file-icon,
+.file-icon:before,
+.file-icon:after {
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    border: 0.125rem solid #b8bec9;
+}
+
+.file-icon:before,
+.file-icon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.125rem solid #ccd0d8;
+}
+
+.file-icon:before {
+    left: -0.625rem;
+    top: 0.5rem;
+    z-index: -1;
+}
+
+.file-icon:after {
+    top: -0.25rem;
+    right: -0.25rem;
+    left: auto;
+    width: 0;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+    border-style: solid;
+    border-color: #f9f9fb #f9f9fb #b8bec9 #b8bec9;
+}
+
+</style>
+<!-- DropZone icon用 -->
+<link href="./TechFUL_09_files/css(1)" rel="stylesheet">
+<link href="./TechFUL_09_files/icon" rel="stylesheet">
+<link rel="stylesheet" href="./TechFUL_09_files/dropzone.min(1).css">
+<!-- DropZone icon用 -->
+
+
+
+
+  
+
+  
+
+<style>
+  .text-line {
+    white-space: pre-line;
+  }
+
+  .fail-testcase {
+    border-right: 5px solid red !important;
+  }
+
+  .success-testcase {
+    border-right: 5px solid #417abe !important;
+  }
+
+  .testcase-tab {
+    min-height: 550px;
+  }
+
+  .testcase-nav-pills>.active {
+    background-color: #FFF !important;
+  }
+
+  .testcase-nav-pills>.nav-link {
+    background-color: rgb(185, 185, 185);
+  }
+
+  .compiling-prossing {
+    margin: 15rem 0;
+  }
+
+  .pre-code {
+    border: 1px solid #dee2e6 !important;
+    background-color: #f8f9fa !important;
+    border-radius: .25rem !important;
+    font-size: 20px;
+  }
+
+  /* ----------------------------
+ クリップボードへのコピー 
+------------------------------*/
+  .file-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+    background-image: url(/static/assets/img/copy_to_clipboard.png);
+    background-size: 60% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom-color: rgba(0, 0, 0, 0.36);
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .file-icon:before {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 35px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.72);
+  }
+
+  .file-icon:after {
+    content: 'Copy to Clipboard';
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 40px;
+    left: -90px;
+    width: 114px;
+    height: 36px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 3px;
+  }
+
+  .file-icon:hover {
+    background-color: #eee;
+  }
+
+  .file-icon:hover:before,
+  .file-icon:hover:after {
+    display: block;
+  }
+
+  .file-icon:active,
+  .file-icon:focus {
+    outline: none;
+  }
+
+  .file-icon:active:after,
+  .file-icon:focus:after {
+    content: 'Copied!';
+  }
+
+  .btn-clipboard {
+    position: relative;
+    right: 51px;
+    border-radius: 0 4px 0 4px;
+  }
+
+  /*DIGITAL CLOCK FONT*/
+  @font-face {
+    font-family: 'digital-7';
+    src: url('/static/assets/fonts/digital-7.ttf');
+  }
+
+
+  .zeroclipboard-is-hover {
+    color: #fff;
+    border-color: #563d7c;
+    background-color: #563d7c;
+  }
+
+
+  /* ----------------------------
+ like button for learning
+------------------------------*/
+  .like_button {
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .i {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 15px;
+    color: #aaa;
+    transition: .2s;
+    font-size: 20px;
+    margin-bottom: 0px !important;
+  }
+
+  .i:hover {
+    color: #666;
+  }
+
+  .i:before {
+    font-family: "Font Awesome 5 Free";
+    ;
+    content: '\f005';
+    font-style: normal;
+  }
+
+  .like {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    transition: .6s;
+    z-index: -2;
+    font-size: 2px;
+    color: transparent;
+    font-weight: 400;
+  }
+
+  .i.press {
+    animation: size .4s;
+    color: rgb(255, 123, 0);
+    ;
+    background: none !important;
+    /* border:0 !important; */
+  }
+
+  .like.press {
+    bottom: 120px;
+    font-size: 14px;
+    visibility: visible;
+    animation: fade 1s;
+  }
+
+  @keyframes fade {
+    0% {
+      color: #transparent;
+    }
+
+    50% {
+      color: #e23b3b;
+    }
+
+    100% {
+      color: #transparent;
+    }
+  }
+
+  @keyframes size {
+    0% {
+      padding: 10px 12px 8px;
+    }
+
+    50% {
+      padding: 14px 16px 12px;
+      margin-top: -4px;
+    }
+
+    100% {
+      padding: 10px 12px 8px;
+    }
+  }
+
+  /* マークダウンの画像サイズ解除 */
+  .markdown img {
+    width: initial !important
+  }
+
+  .error-text {
+    color: red;
+  }
+
+  /* 検証履歴 */
+  .inspect-table {}
+
+  /* タブ用 */
+  .tabs-component-tabs {
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    top: 0px;
+    padding: 0;
+  }
+
+  @media (min-width: 700px) {
+    .tabs-component-tabs {
+      border: 0;
+      align-items: stretch;
+      display: flex;
+      margin-bottom: -1px;
+    }
+  }
+
+  .tabs-component-tab {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 0;
+    list-style: none;
+  }
+
+  .tabs-component-tab:hover {
+    color: #666;
+  }
+
+  .tabs-component-tab.is-active {
+    color: #000;
+  }
+
+  .tabs-component-tab.is-disabled * {
+    color: #cdcdcd;
+    cursor: not-allowed !important;
+  }
+
+  @media (min-width: 700px) {
+    .tabs-component-tab {
+      background-color: #fff;
+      margin-right: .5em;
+      margin-bottom: 2px;
+      transform: translateY(2px);
+      transition: transform .3s ease;
+    }
+
+    .tabs-component-tab.is-active {
+      z-index: 2;
+      transform: translateY(0);
+    }
+  }
+
+  .tabs-component-tab-a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    padding: .75em 1em;
+    text-decoration: none;
+  }
+
+  .tabs-component-panels {
+    padding: 16px 0;
+  }
+
+  @media (min-width: 700px) {
+    .tabs-component-panels {
+      background-color: #fff;
+    }
+  }
+
+  .is-active {
+    border-bottom: 3px solid #417abe;
+  }
+</style>
+
+
+
+
+<link href="./TechFUL_09_files/problem_statement.css" rel="stylesheet">
+<link href="./TechFUL_09_files/common.css" rel="stylesheet">
+<!-- サーティファイ用試験タイマー用 css -->
+
+<!-- チュートリアル時だけ読み込む処理を入れる↓ -->
+<link href="./TechFUL_09_files/tutorial.css" rel="stylesheet">
+<!-- チュートリアル時だけ読み込む処理を入れる↑ -->
+<section id="top">
+
+
+  <!-- <div class="modal fade" id="exampleAnswer" tabindex="-1" role="dialog" aria-labelledby="exampleAnswerModalCenterTitle"
+   v-if="baseData.pageStatus === 2" v-cloak
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleAnswerModalLongTitle">
+             模範解答
+           </h5>
+           <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+          <div class="table-responsive" v-for="(obj, i) in exampleCodes">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">順位</th>
+                  <th scope="col">アカウント名</th>
+                  <th scope="col">スコア</th>
+                  <th scope="col">解答言語</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr>
+                  <th scope="row">[[ obj.order ]]</th>
+                  <td>[[ obj.username ]]</td>
+                  <td>[[ obj.net_score ]]</td>
+                  <td>[[ obj.pg_lang_name ]]</td>
+                </tr>
+                <tr>
+                  <td colspan="4" class="px-0" style="position: relative;">
+<pre class="mb-0 rounded text-left border-0"><code>[[ obj.src ]]</code></pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>           
+         </div>
+       </div>
+     </div>
+   </div> -->
+
+  <!-- サンプルコード用 Modal -->
+
+  <!-- 検定試験タイマー要素 -->
+  <div id="time"><!----></div>
+
+
+  <div class="w-100" style="position:relative">
+    <div id="navHeader"><div><!----> <!----> <ul role="tablist" class="nav py-3 text-primary border"><li id="1" class="main-tab nav-click nav-item my-auto ml-4"><a href="https://techful-programming.com/user/event/session/c5z5IzMj"><i class="icofont icofont-rounded-left"></i>
+                  戻る
+                </a></li> <li id="4" class="main-tab nav-click ml-auto"><a data-toggle="modal" data-target="#exampleCode" class="nav-link font-weight-bold pointer" style="cursor: pointer;"><i class="icofont icofont-code-alt"></i>
+              サンプルコード
+            </a></li> <li id="4" class="main-tab nav-click mr-auto"><a href="https://techful-programming.com/faq/problem" target="_blank" class="nav-link font-weight-bold pointer" style="cursor: pointer;"><i class="icofont icofont-code-alt"></i>
+              問題FAQ
+            </a></li></ul></div> <!----> <!----></div>
+
+    <div class="p-0">
+      <!-- フィルタリングが必要な要素のトップ -->
+      <div id="filterTop" class="user-table tab-content">
+        <div id="all">
+          <div class="row mx-1">
+            <div id="question" class="col-lg-8 col-md-8 order-1"><!----> <div class="question mb-5" style="position: sticky; top: 0px;"><div class="test"><div class="container-fluid"><div class="row"><div class="col-lg-12 col-md-12 col-ms-12 col-xs-12 pl-4 mt-5"><span id="question_title" class="text-left text-dark title mt-5 mb-2" style="font-size: 30px;"><!---->
+
+                          
+                          「整列競争」
+                          
+                        </span> <span class="badge border-light text-dark bg-transparent border-0 h5" style="font-size: 15px;">
+                          / 難易度 : 3
+                        </span></div> <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12"><span class="badge border-light text-dark bg-transparent h5 border-0" style="font-size: 15px;">
+                          問題タイプ:コーディング問題
+                        </span> <span class="badge border-light text-dark bg-transparent h5 border-0" style="font-size: 15px;">
+                          目標タイム:30分
+                        </span> <span class="badge border-light text-dark bg-transparent h5 border-0" style="font-size: 15px;">
+                          アルゴリズム/ アイディア
+                        </span></div></div></div> <div class="mb-4" style="border-width: 1px; border-style: solid; border-bottom-color: rgb(30, 30, 93);"></div> <div class="container-fluid my-4 p-5 card"><div class="markdown markdown-div" id="question_text"><h4 id="_1"><strong>問題文</strong></h4> <hr> <p><strong>整列競争</strong>という独自のゲームについて考えます。<br>
+整列競争に参加する<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-1">1</script>チームの人数は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-4" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-5" class="mjx-mrow"><span id="MJXc-Node-6" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-7" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">2N</script>人であり、それぞれ各自<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-8" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-9" class="mjx-mrow"><span id="MJXc-Node-10" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-11" class="mjx-texatom"><span id="MJXc-Node-12" class="mjx-mrow"><span id="MJXc-Node-13" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-14" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-15" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">1{\sim}2N</script>の番号カードを<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-16" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-17" class="mjx-mrow"><span id="MJXc-Node-18" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">1</script>枚ずつバラバラに持っています。そして、各自初期位置に従って、東西に<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-19" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-20" class="mjx-mrow"><span id="MJXc-Node-21" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">1</script>列に並びます。<br>
+整列競争は、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-22" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-23" class="mjx-mrow"><span id="MJXc-Node-24" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">N</script>人全員の番号カードが<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-25" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-26" class="mjx-mrow"><span id="MJXc-Node-27" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-28" class="mjx-texatom"><span id="MJXc-Node-29" class="mjx-mrow"><span id="MJXc-Node-30" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-31" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">1{\sim}N</script>のどれか、東から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-32" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-33" class="mjx-mrow"><span id="MJXc-Node-34" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">N</script>人全員の番号カードが<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-35" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-36" class="mjx-mrow"><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-38" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.316em; padding-bottom: 0.441em;">+</span></span><span id="MJXc-Node-39" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-40" class="mjx-texatom"><span id="MJXc-Node-41" class="mjx-mrow"><span id="MJXc-Node-42" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-43" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-44" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>+</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">N+1 
+{\sim}2N</script>のどれかとなったとき、ゲーム終了の条件を満たし、クリアとなります。<br>
+そして、整列競争に参加するチームは以下の位置替えを何度でも行うことができます。<br>
+1. 西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-45" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-46" class="mjx-mrow"><span id="MJXc-Node-47" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-10">N</script>人の中で一人を選ぶ。<br>
+2. 東から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-48" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-49" class="mjx-mrow"><span id="MJXc-Node-50" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-11">N</script>人の中で一人を選ぶ。<br>
+3. 選んだ二人の位置を交換する。<br>
+整列競争が終了した時、位置替えの回数が最小のチームが勝利となります。</p> <hr> <p>あなたのチームは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-12-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-51" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-52" class="mjx-mrow"><span id="MJXc-Node-53" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-54" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-12">2N</script>人であり、東西に渡って一列に並び、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-13-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-55" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-56" class="mjx-mrow"><span id="MJXc-Node-57" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-13">i</script>番目の人は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-14-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-58" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-59" class="mjx-mrow"><span id="MJXc-Node-60" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-61" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-62" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span id="MJXc-Node-63" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-64" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-65" class="mjx-texatom"><span id="MJXc-Node-66" class="mjx-mrow"><span id="MJXc-Node-67" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-68" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span><span id="MJXc-Node-69" class="mjx-texatom"><span id="MJXc-Node-70" class="mjx-mrow"><span id="MJXc-Node-71" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-72" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-73" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-74" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>2</mn><mi>N</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-14">a_i(1{\leqq}i{\leqq}2N)</script>の番号カードを持っています。</p> <p>あなたのチームが勝利のために最善を尽くす時、最小の位置替えの回数を出力してください。</p> <h4 id="_2"><strong>入力される値</strong></h4> <hr> <pre><code>N
+a_1 a_2 ･･･ ･･･ a_2N-1 a_2N
+</code></pre> <ul><li>一行目に、チームの半分の人数を表す整数<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-15-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-75" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-76" class="mjx-mrow"><span id="MJXc-Node-77" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-15">N</script>が与えられる。</li> <li>二行目に、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-16-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-78" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-79" class="mjx-mrow"><span id="MJXc-Node-80" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-16">i</script>番目の人が持っている番号カードの値を表す、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-17-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-81" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-82" class="mjx-mrow"><span id="MJXc-Node-83" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-84" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-17">2N</script>個の整数<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-18-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-85" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-86" class="mjx-mrow"><span id="MJXc-Node-87" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-88" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-89" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-18">a_i</script>が与えられる。</li></ul> <p>但し、a_iは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-19-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msub&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-90" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-91" class="mjx-mrow"><span id="MJXc-Node-92" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span><span id="MJXc-Node-93" class="mjx-texatom"><span id="MJXc-Node-94" class="mjx-mrow"><span id="MJXc-Node-95" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-96" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-97" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi></mi><mi>i</mi></msub></mrow></math></span></span><script type="math/tex" id="MathJax-Element-19">a{_i}</script> を表す。</p> <h4 id="_3"><strong>期待される出力値</strong></h4> <hr> <p>あなたのチームが勝利のために最善を尽くす時の最小の位置替えの回数を一行で出力してください。</p> <h4 id="_4"><strong>制約</strong></h4> <hr> <ul><li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-20-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-98" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-99" class="mjx-mrow"><span id="MJXc-Node-100" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-101" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-102" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-103" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-104" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>,</mo><msub><mi>a</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-20">N,a_i</script>は整数</li> <li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-21-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msup&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-105" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-106" class="mjx-mrow"><span id="MJXc-Node-107" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-108" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-109" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-110" class="mjx-texatom"><span id="MJXc-Node-111" class="mjx-mrow"><span id="MJXc-Node-112" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-113" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-114" class="mjx-texatom"><span id="MJXc-Node-115" class="mjx-mrow"><span id="MJXc-Node-116" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-117" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">10</span></span><span id="MJXc-Node-118" class="mjx-texatom"><span id="MJXc-Node-119" class="mjx-mrow"><span id="MJXc-Node-120" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-121" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-122" class="mjx-texatom" style=""><span id="MJXc-Node-123" class="mjx-mrow"><span id="MJXc-Node-124" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span></span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mi>N</mi><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><msup><mi></mi><mrow class="MJX-TeXAtom-ORD"><mn>5</mn></mrow></msup></mrow></math></span></span><script type="math/tex" id="MathJax-Element-21">N (1{\leqq}N{\leqq}10{^{5}}</script>)</li> <li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-22-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msub&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-125" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-126" class="mjx-mrow"><span id="MJXc-Node-127" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span><span id="MJXc-Node-128" class="mjx-texatom"><span id="MJXc-Node-129" class="mjx-mrow"><span id="MJXc-Node-130" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-131" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-132" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi></mi><mi>i</mi></msub></mrow></math></span></span><script type="math/tex" id="MathJax-Element-22">a{_i}</script> (<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-23-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-133" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-134" class="mjx-mrow"><span id="MJXc-Node-135" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-136" class="mjx-texatom"><span id="MJXc-Node-137" class="mjx-mrow"><span id="MJXc-Node-138" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-139" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-140" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-141" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span id="MJXc-Node-142" class="mjx-texatom"><span id="MJXc-Node-143" class="mjx-mrow"><span id="MJXc-Node-144" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-145" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-146" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><msub><mi>a</mi><mi>i</mi></msub><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-23">1{\leqq}a_i{\leqq}2N</script>)</li></ul> <p>但し、番号カードは、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-24-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-147" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-148" class="mjx-mrow"><span id="MJXc-Node-149" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-150" class="mjx-texatom"><span id="MJXc-Node-151" class="mjx-mrow"><span id="MJXc-Node-152" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-153" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-154" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-24">1{\sim}2N</script>の値のカードが一つずつ存在することが保証される。</p></div> <div class="row mt-5"><div class="col-md-12"><h5 class="mb-4 mt-5 pt-5 border-top">
+                          サンプルケース1
+                        </h5> <span class="text-secondary" :class="isCountWordsNum(&#39;1&#39;)">
+                          入力値
+                        </span> <div style="position: relative;"><i class="file-icon far fa-clipboard rounded py-1 px-2 align-middle border-top-0 border-right-0 border-left" style="font-size: 1.75em; margin: 0.2%;" onclick="copyToClipboard(1)"></i> <pre class="tex2jax_ignore p-2 mt-2 mb-3" :class="isCountWordsNum(&#39;1&#39;)"><code class="samplecase1">3
+3 6 5 1 2 4
+</code></pre></div> <span class="text-secondary">期待される出力値</span> <pre class="tex2jax_ignore p-2 mt-2 mb-3"><code>2
+</code></pre> <div id="samplecase_text"><span class="text-secondary">説明</span> <div class="bg-light p-2 mt-2 explain border"><p class="text-secondary markdown-div mb-0"></p><p>あなたのチームは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-25-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-155" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-156" class="mjx-mrow"><span id="MJXc-Node-157" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span><span id="MJXc-Node-158" class="mjx-texatom"><span id="MJXc-Node-159" class="mjx-mrow"><span id="MJXc-Node-160" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.191em; padding-bottom: 0.316em;">×</span></span></span></span><span id="MJXc-Node-161" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mrow class="MJX-TeXAtom-ORD"><mo>×</mo></mrow><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-25">3{\times}2</script>人のチームであり、西から一列に並んでいます。初期状態で一番西にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-26-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-162" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-163" class="mjx-mrow"><span id="MJXc-Node-164" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-26">3</script>を持っており、一番東にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-27-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-165" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-166" class="mjx-mrow"><span id="MJXc-Node-167" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-27">4</script>を持っています。<br>
+初期状態において、一番西にいる人は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-28-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-168" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-169" class="mjx-mrow"><span id="MJXc-Node-170" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-171" class="mjx-texatom"><span id="MJXc-Node-172" class="mjx-mrow"><span id="MJXc-Node-173" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-174" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-28">1{\sim}3</script>のうち、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-29-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-175" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-176" class="mjx-mrow"><span id="MJXc-Node-177" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-29">3</script>のカードを持っているため誰かと交代する必要がありません。一番東にいる人は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-30-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-178" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-179" class="mjx-mrow"><span id="MJXc-Node-180" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-181" class="mjx-texatom"><span id="MJXc-Node-182" class="mjx-mrow"><span id="MJXc-Node-183" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-184" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">6</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>6</mn></math></span></span><script type="math/tex" id="MathJax-Element-30">4{\sim}6</script>のうち、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-31-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-185" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-186" class="mjx-mrow"><span id="MJXc-Node-187" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-31">4</script>のカードを持っているため誰かと交代する必要がありません。<br>
+しかし、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-32-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-188" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-189" class="mjx-mrow"><span id="MJXc-Node-190" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-191" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-192" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span><span id="MJXc-Node-193" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-194" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-195" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-196" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-32">2,3,4,5</script>番目の人は条件を満たさないため誰かと位置替えをする必要があります。以下のような位置替えをすると、最小回数でゲーム終了を迎えることができます。<br>
+1. <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-33-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-197" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-198" class="mjx-mrow"><span id="MJXc-Node-199" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-200" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span><span id="MJXc-Node-201" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-202" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">6</span></span><span id="MJXc-Node-203" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-204" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span><span id="MJXc-Node-205" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-206" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-207" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-208" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-209" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-210" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-211" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-33">(3,6,5,1,2,4)</script>(初期状態)<br>
+2. <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-34-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-212" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-213" class="mjx-mrow"><span id="MJXc-Node-214" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-215" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span><span id="MJXc-Node-216" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-217" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-218" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-219" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span><span id="MJXc-Node-220" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-221" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-222" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-223" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">6</span></span><span id="MJXc-Node-224" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-225" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-226" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-34">(3,2,5,1,6,4)</script>(西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-35-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-227" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-228" class="mjx-mrow"><span id="MJXc-Node-229" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-35">2</script>番目の人と、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-36-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-230" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-231" class="mjx-mrow"><span id="MJXc-Node-232" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-36">5</script>番目の人が位置替え)<br>
+3. <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-37-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-233" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-234" class="mjx-mrow"><span id="MJXc-Node-235" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-236" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span><span id="MJXc-Node-237" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-238" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-239" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-240" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-241" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-242" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span><span id="MJXc-Node-243" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-244" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">6</span></span><span id="MJXc-Node-245" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-246" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-247" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-37">(3,2,1,5,6,4)</script>(西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-38-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-248" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-249" class="mjx-mrow"><span id="MJXc-Node-250" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-38">3</script>番目の人と、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-39-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-251" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-252" class="mjx-mrow"><span id="MJXc-Node-253" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-39">4</script>番目の人が位置替え)<br>
+よって、位置替えの最小回数は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-40-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-254" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-255" class="mjx-mrow"><span id="MJXc-Node-256" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-40">2</script>回となります。他にも最小回数となる位置替えの方法は存在します。</p> <p></p></div></div> <h5 class="mb-4 mt-5 pt-5 border-top">
+                          サンプルケース2
+                        </h5> <span class="text-secondary" :class="isCountWordsNum(&#39;2&#39;)">
+                          入力値
+                        </span> <div style="position: relative;"><i class="file-icon far fa-clipboard rounded py-1 px-2 align-middle border-top-0 border-right-0 border-left" style="font-size: 1.75em; margin: 0.2%;" onclick="copyToClipboard(2)"></i> <pre class="tex2jax_ignore p-2 mt-2 mb-3" :class="isCountWordsNum(&#39;2&#39;)"><code class="samplecase2">4
+8 6 5 7 4 1 2 3
+</code></pre></div> <span class="text-secondary">期待される出力値</span> <pre class="tex2jax_ignore p-2 mt-2 mb-3"><code>4
+</code></pre> <div id="samplecase_text"><span class="text-secondary">説明</span> <div class="bg-light p-2 mt-2 explain border"><p class="text-secondary markdown-div mb-0"></p><p>あなたのチームは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-41-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-257" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-258" class="mjx-mrow"><span id="MJXc-Node-259" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span><span id="MJXc-Node-260" class="mjx-texatom"><span id="MJXc-Node-261" class="mjx-mrow"><span id="MJXc-Node-262" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.191em; padding-bottom: 0.316em;">×</span></span></span></span><span id="MJXc-Node-263" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mrow class="MJX-TeXAtom-ORD"><mo>×</mo></mrow><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-41">4{\times}2</script>人のチームであり、西から一列に並んでいます。初期に一番西にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-42-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;8&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-264" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-265" class="mjx-mrow"><span id="MJXc-Node-266" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">8</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math></span></span><script type="math/tex" id="MathJax-Element-42">8</script>を持っており、一番東にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-43-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-267" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-268" class="mjx-mrow"><span id="MJXc-Node-269" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-43">3</script>を持っています。<br>
+初期状態において、位置替えをする必要のない人が一人もいません。また、位置替えの最小回数は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-44-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-270" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-271" class="mjx-mrow"><span id="MJXc-Node-272" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-44">4</script>回となります。</p> <p></p></div></div> <h5 class="mb-4 mt-5 pt-5 border-top">
+                          サンプルケース3
+                        </h5> <span class="text-secondary" :class="isCountWordsNum(&#39;3&#39;)">
+                          入力値
+                        </span> <div style="position: relative;"><i class="file-icon far fa-clipboard rounded py-1 px-2 align-middle border-top-0 border-right-0 border-left" style="font-size: 1.75em; margin: 0.2%;" onclick="copyToClipboard(3)"></i> <pre class="tex2jax_ignore p-2 mt-2 mb-3" :class="isCountWordsNum(&#39;3&#39;)"><code class="samplecase3">5
+4 3 2 5 1 8 7 6 9 10
+</code></pre></div> <span class="text-secondary">期待される出力値</span> <pre class="tex2jax_ignore p-2 mt-2 mb-3"><code>0
+</code></pre> <div id="samplecase_text"><span class="text-secondary">説明</span> <div class="bg-light p-2 mt-2 explain border"><p class="text-secondary markdown-div mb-0"></p><p>あなたのチームは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-45-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-273" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-274" class="mjx-mrow"><span id="MJXc-Node-275" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span><span id="MJXc-Node-276" class="mjx-texatom"><span id="MJXc-Node-277" class="mjx-mrow"><span id="MJXc-Node-278" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.191em; padding-bottom: 0.316em;">×</span></span></span></span><span id="MJXc-Node-279" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mrow class="MJX-TeXAtom-ORD"><mo>×</mo></mrow><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-45">5{\times}2</script>人のチームであり、西から一列に並んでいます。初期に一番西にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-46-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-280" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-281" class="mjx-mrow"><span id="MJXc-Node-282" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-46">4</script>を持っており、一番東にいる人は番号カード<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-47-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-283" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-284" class="mjx-mrow"><span id="MJXc-Node-285" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">10</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-47">10</script>を持っています。<br>
+初期状態において、全員位置替えをする必要がありません。よって、位置替えの最小回数は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-48-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-286" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-287" class="mjx-mrow"><span id="MJXc-Node-288" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-48">0</script>回となります。</p> <p></p></div></div></div></div></div></div></div></div>
+
+
+
+            <div id="casesTop" class="col-lg-4 col-md-4 order-2"><h4 class="text-secondary text-center my-3 mt-5"></h4> <div class="sticky"><div class="tex2jax_ignore card mb-3"><h5 class="card-header">
+                    サンプルケース1
+                  </h5> <div class="card-body"><span class="text-secondary">
+                      入力値 <span>行数: 3</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>3
+3 6 5 1 2 4
+</code></pre> <span class="text-secondary">
+                      出力値 <span>行数: 2</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>2
+</code></pre> <!----></div></div><div class="tex2jax_ignore card mb-3"><h5 class="card-header">
+                    サンプルケース2
+                  </h5> <div class="card-body"><span class="text-secondary">
+                      入力値 <span>行数: 3</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>4
+8 6 5 7 4 1 2 3
+</code></pre> <span class="text-secondary">
+                      出力値 <span>行数: 2</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>4
+</code></pre> <!----></div></div><div class="tex2jax_ignore card mb-3"><h5 class="card-header">
+                    サンプルケース3
+                  </h5> <div class="card-body"><span class="text-secondary">
+                      入力値 <span>行数: 3</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>5
+4 3 2 5 1 8 7 6 9 10
+</code></pre> <span class="text-secondary">
+                      出力値 <span>行数: 2</span></span> <!----> <pre class="bg-light mb-4 p-2" style="max-height: 100px; overflow: scroll;"><code>0
+</code></pre> <!----></div></div> <button onfocus="this.blur();" class="btn btn-common btn-sm my-3">
+                  テストする
+                </button> <div id="accordion" style="display: none;"><div class="card col-md-12 shadow-sm"><div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" class="collapse show"><div class="card-body"><h3 class="text-center text-secondary title mt-3 mb-5">
+                          整列競争
+                        </h3> <div class="row"><div class="col-md-6 pl-4"><span class="badge badge-warning h5 p-2">
+                              アルゴリズム
+                            </span> <span class="badge border border-light text-secondary bg-transparent h5">
+                              -アイディア
+                            </span></div> <div class="col-md-6 pr-4 text-right"><span class="badge border border-light text-dark bg-transparent h5 ml-3">
+                              難易度：3
+                            </span> <span class="badge border border-light text-dark bg-transparent h5">
+                              目標タイム：30分
+                            </span></div></div> <div class="container my-4 p-2 card shadow-none"><div class="markdown markdown-div"><h4 id="_1"><strong>問題文</strong></h4> <hr> <p><strong>整列競争</strong>という独自のゲームについて考えます。<br>
+整列競争に参加する<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-49-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-289" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-290" class="mjx-mrow"><span id="MJXc-Node-291" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-49">1</script>チームの人数は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-50-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-292" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-293" class="mjx-mrow"><span id="MJXc-Node-294" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-295" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-50">2N</script>人であり、それぞれ各自<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-51-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-296" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-297" class="mjx-mrow"><span id="MJXc-Node-298" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-299" class="mjx-texatom"><span id="MJXc-Node-300" class="mjx-mrow"><span id="MJXc-Node-301" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-302" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-303" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-51">1{\sim}2N</script>の番号カードを<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-52-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-304" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-305" class="mjx-mrow"><span id="MJXc-Node-306" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-52">1</script>枚ずつバラバラに持っています。そして、各自初期位置に従って、東西に<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-53-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-307" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-308" class="mjx-mrow"><span id="MJXc-Node-309" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-53">1</script>列に並びます。<br>
+整列競争は、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-54-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-310" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-311" class="mjx-mrow"><span id="MJXc-Node-312" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-54">N</script>人全員の番号カードが<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-55-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-313" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-314" class="mjx-mrow"><span id="MJXc-Node-315" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-316" class="mjx-texatom"><span id="MJXc-Node-317" class="mjx-mrow"><span id="MJXc-Node-318" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-319" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-55">1{\sim}N</script>のどれか、東から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-56-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-320" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-321" class="mjx-mrow"><span id="MJXc-Node-322" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-56">N</script>人全員の番号カードが<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-57-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-323" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-324" class="mjx-mrow"><span id="MJXc-Node-325" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-326" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.316em; padding-bottom: 0.441em;">+</span></span><span id="MJXc-Node-327" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-328" class="mjx-texatom"><span id="MJXc-Node-329" class="mjx-mrow"><span id="MJXc-Node-330" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-331" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-332" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>+</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-57">N+1 
+{\sim}2N</script>のどれかとなったとき、ゲーム終了の条件を満たし、クリアとなります。<br>
+そして、整列競争に参加するチームは以下の位置替えを何度でも行うことができます。<br>
+1. 西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-58-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-333" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-334" class="mjx-mrow"><span id="MJXc-Node-335" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-58">N</script>人の中で一人を選ぶ。<br>
+2. 東から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-59-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-336" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-337" class="mjx-mrow"><span id="MJXc-Node-338" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-59">N</script>人の中で一人を選ぶ。<br>
+3. 選んだ二人の位置を交換する。<br>
+整列競争が終了した時、位置替えの回数が最小のチームが勝利となります。</p> <hr> <p>あなたのチームは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-60-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-339" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-340" class="mjx-mrow"><span id="MJXc-Node-341" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-342" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-60">2N</script>人であり、東西に渡って一列に並び、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-61-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-343" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-344" class="mjx-mrow"><span id="MJXc-Node-345" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-61">i</script>番目の人は<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-62-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-346" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-347" class="mjx-mrow"><span id="MJXc-Node-348" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-349" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-350" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span id="MJXc-Node-351" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-352" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-353" class="mjx-texatom"><span id="MJXc-Node-354" class="mjx-mrow"><span id="MJXc-Node-355" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-356" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span><span id="MJXc-Node-357" class="mjx-texatom"><span id="MJXc-Node-358" class="mjx-mrow"><span id="MJXc-Node-359" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-360" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-361" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-362" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>2</mn><mi>N</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-62">a_i(1{\leqq}i{\leqq}2N)</script>の番号カードを持っています。</p> <p>あなたのチームが勝利のために最善を尽くす時、最小の位置替えの回数を出力してください。</p> <h4 id="_2"><strong>入力される値</strong></h4> <hr> <pre><code>N
+a_1 a_2 ･･･ ･･･ a_2N-1 a_2N
+</code></pre> <ul><li>一行目に、チームの半分の人数を表す整数<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-63-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-363" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-364" class="mjx-mrow"><span id="MJXc-Node-365" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-63">N</script>が与えられる。</li> <li>二行目に、西から<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-64-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-366" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-367" class="mjx-mrow"><span id="MJXc-Node-368" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-64">i</script>番目の人が持っている番号カードの値を表す、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-65-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-369" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-370" class="mjx-mrow"><span id="MJXc-Node-371" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-372" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-65">2N</script>個の整数<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-66-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-373" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-374" class="mjx-mrow"><span id="MJXc-Node-375" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-376" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-377" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-66">a_i</script>が与えられる。</li></ul> <p>但し、a_iは<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-67-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msub&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-378" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-379" class="mjx-mrow"><span id="MJXc-Node-380" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span><span id="MJXc-Node-381" class="mjx-texatom"><span id="MJXc-Node-382" class="mjx-mrow"><span id="MJXc-Node-383" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-384" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-385" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi></mi><mi>i</mi></msub></mrow></math></span></span><script type="math/tex" id="MathJax-Element-67">a{_i}</script> を表す。</p> <h4 id="_3"><strong>期待される出力値</strong></h4> <hr> <p>あなたのチームが勝利のために最善を尽くす時の最小の位置替えの回数を一行で出力してください。</p> <h4 id="_4"><strong>制約</strong></h4> <hr> <ul><li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-68-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-386" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-387" class="mjx-mrow"><span id="MJXc-Node-388" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-389" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.184em; padding-bottom: 0.566em;">,</span></span><span id="MJXc-Node-390" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-391" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-392" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>,</mo><msub><mi>a</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-68">N,a_i</script>は整数</li> <li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-69-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msup&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-393" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-394" class="mjx-mrow"><span id="MJXc-Node-395" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-396" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.441em; padding-bottom: 0.566em;">(</span></span><span id="MJXc-Node-397" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-398" class="mjx-texatom"><span id="MJXc-Node-399" class="mjx-mrow"><span id="MJXc-Node-400" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-401" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-402" class="mjx-texatom"><span id="MJXc-Node-403" class="mjx-mrow"><span id="MJXc-Node-404" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-405" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">10</span></span><span id="MJXc-Node-406" class="mjx-texatom"><span id="MJXc-Node-407" class="mjx-mrow"><span id="MJXc-Node-408" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-409" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-410" class="mjx-texatom" style=""><span id="MJXc-Node-411" class="mjx-mrow"><span id="MJXc-Node-412" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.378em;">5</span></span></span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mi>N</mi><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><msup><mi></mi><mrow class="MJX-TeXAtom-ORD"><mn>5</mn></mrow></msup></mrow></math></span></span><script type="math/tex" id="MathJax-Element-69">N (1{\leqq}N{\leqq}10{^{5}}</script>)</li> <li><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-70-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;msub&gt;&lt;mi&gt;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-413" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-414" class="mjx-mrow"><span id="MJXc-Node-415" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span><span id="MJXc-Node-416" class="mjx-texatom"><span id="MJXc-Node-417" class="mjx-mrow"><span id="MJXc-Node-418" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-419" class="mjx-mi"><span class="mjx-char"></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-420" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi></mi><mi>i</mi></msub></mrow></math></span></span><script type="math/tex" id="MathJax-Element-70">a{_i}</script> (<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-71-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x2266;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-421" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-422" class="mjx-mrow"><span id="MJXc-Node-423" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-424" class="mjx-texatom"><span id="MJXc-Node-425" class="mjx-mrow"><span id="MJXc-Node-426" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-427" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-428" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.191em; padding-bottom: 0.316em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-429" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.316em;">i</span></span></span></span><span id="MJXc-Node-430" class="mjx-texatom"><span id="MJXc-Node-431" class="mjx-mrow"><span id="MJXc-Node-432" class="mjx-mo"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.503em; padding-bottom: 0.503em;">≦</span></span></span></span><span id="MJXc-Node-433" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-434" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><msub><mi>a</mi><mi>i</mi></msub><mrow class="MJX-TeXAtom-ORD"><mo>≦</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-71">1{\leqq}a_i{\leqq}2N</script>)</li></ul> <p>但し、番号カードは、<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-72-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo&gt;&amp;#x223C;&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><span id="MJXc-Node-435" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-436" class="mjx-mrow"><span id="MJXc-Node-437" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">1</span></span><span id="MJXc-Node-438" class="mjx-texatom"><span id="MJXc-Node-439" class="mjx-mrow"><span id="MJXc-Node-440" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.066em; padding-bottom: 0.316em;">∼</span></span></span></span><span id="MJXc-Node-441" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.378em; padding-bottom: 0.316em;">2</span></span><span id="MJXc-Node-442" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.441em; padding-bottom: 0.253em; padding-right: 0.085em;">N</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>∼</mo></mrow><mn>2</mn><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-72">1{\sim}2N</script>の値のカードが一つずつ存在することが保証される。</p></div></div></div></div></div></div></div></div>
+
+            <!-- エディタインスタンス -->
+            <div id="js-editor" class="sticky col-lg-8 col-md-8 order-3"><div class="card mb-5 mt-4 card-top" style="background-color: rgb(231, 231, 245);"><div class="card-body"><div class="row"><div class="col mb-3"><div class="form-inline float-right anchor"><button id="editor-transeform" onfocus="this.blur();" class="btn btn-common btn-sm">
+                          配置変更
+                        </button> <select id="pg_id" data-toggle="tooltip" title="" class="form-control language-picker bg-white" style="height: 38px;" data-original-title="!!言語を変更すると、今のテキストフォーマットが失われます"><option id="java" value="3">
+                            Java
+                          </option><option id="c" value="5">
+                            C
+                          </option><option id="cpp" value="6">
+                            C++
+                          </option><option id="Python2" value="7">
+                            Python2
+                          </option><option id="python" value="8">
+                            Python3
+                          </option></select> <div class="tooltip2"><i class="ml-2 icofont icofont-info-square text-primary " style="font-size: 20px;"></i> <div class="description2"><p class="py-0 my-0 mb-2 text-white">※実行時間制限は全て5秒</p> <p class="py-0 my-0 text-white">PHP7.3 (PHP 7.3.26)</p> <p class="py-0 my-0 text-white">Java11 (OpenJDK 11.0.5)</p> <p class="py-0 my-0 text-white">C11 (GCC 9.3.0)</p> <p class="py-0 my-0 text-white">C++17 (GCC 9.3.0)</p> <p class="py-0 my-0 text-white">Python2.7 (2.7.16)</p> <p class="py-0 my-0 text-white">Python3 (3.7.4)</p> <p class="py-0 my-0 text-white">JavaScript(Node.js14.2.0)</p> <p class="py-0 my-0 text-white">Go 1.14 (1.14.2)</p> <p class="py-0 my-0 text-white">Scala2.12.8</p> <p class="py-0 my-0 text-white">Rust1.39 (1.39.0)</p> <p class="py-0 my-0 text-white">Ruby2.6 (2.6.6)</p> <p class="py-0 my-0 text-white">C#7 (6.12.0.107)</p> <p class="py-0 my-0 text-white">Objective-C (Clang 9.0.1)</p> <p class="py-0 my-0 text-white">Perl5 (5.30.3)</p> <p class="py-0 my-0 text-white">swift 5.2.3</p> <p class="py-0 my-0 text-white">Kotlin 1.3.40</p> <p class="py-0 my-0 text-white">Scheme/Racket7(7.8)</p> <p class="py-0 my-0 text-white">R 3.6.2</p></div></div> <!----> <!----></div></div></div> <div class="row px-0"><div class="w-100"><div id="editor" style="height: 78vh;"></div> <div id="editorModal" class="modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-body"><div id="secondEditor" style="height: 80vh;"></div></div></div></div></div></div></div> <div class="text-right mt-3 anchor"><button onfocus="this.blur();" class="btn btn-primary btn-md">
+                      採点開始
+                    </button> <!----></div> <!----></div></div> <div class="top-wrapper text-right"><!----> <!----> <!----> <!----> <!----></div></div>
+          </div>
+          <!-- エディタ要素 -->
+
+
+          <!-- コンパイル中要素 -->
+          <div id="compiling-prossing" class="container-fluid text-center" style="display: none;"><h4 class="text-secondary compiling-prossing"><img src="./TechFUL_09_files/favicon.ico" alt="" style="width: 24px;"> <span class="">
+                採点中...
+              </span> <i class="fas fa-spinner fa-pulse"></i></h4></div>
+          <!-- コンパイル中要素 -->
+
+          <!-- おすすめ問題 & 正解テストケース数関連要素 -->
+          <div id="js-recommend-info" class="container-fluid my-4"><div class="row"><div class="col-lg-8"><!----> <!----></div></div></div>
+
+          <!-- テストケース結果 -->
+          <!---->
+          <!-- テストケース結果 -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- modal -->
+<!-- サンプルコード用 Modal -->
+<div id="exampleCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" class="modal fade"><div role="document" class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header"><h5 id="exampleModalLongTitle" class="modal-title">
+          サンプルコード
+        </h5> <button type="button" data-dismiss="modal" aria-label="Close" class="close text-secondary"><span aria-hidden="true">×</span></button></div> <div class="modal-body"><div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse text-left"><div class="container p-3 tex2jax_ignore"><div class="card card-plain my-1"><div class="card-header">
+                サンプル1 (シンプル)
+              </div> <!----> <!----> <!----> <div class="card-body"><div class="p-3"><p class="font-weight-bold">
+                    標準入力</p> <pre class="border-0"><code>1 2 3</code></pre></div> <pre name="sample1" id="sample1" class="bg-light p-3"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main(){
+	int a, b, c;
+	cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+
+	cout &lt;&lt; a &lt;&lt; " " &lt;&lt; b &lt;&lt; " " &lt;&lt; c &lt;&lt; endl;
+	return 0;
+}</code></pre> <div class="p-3"><p class="font-weight-bold">
+                    出力結果</p> <pre class="border-0"><code>1 2 3</code></pre></div></div></div><div class="card card-plain my-1"><!----> <div class="card-header">
+                サンプル2 (複数)
+              </div> <!----> <!----> <div class="card-body"><div class="p-3"><p class="font-weight-bold">
+                    標準入力</p> <pre class="border-0"><code>1 2 3
+1 2 3</code></pre></div> <pre name="sample1" id="sample1" class="bg-light p-3"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main(){
+	int a, b, c;
+	int d, e, f;
+	cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+	cin &gt;&gt; d &gt;&gt; e &gt;&gt; f;
+
+	cout &lt;&lt; a &lt;&lt; " " &lt;&lt; b &lt;&lt; " " &lt;&lt; c &lt;&lt; endl;
+	cout &lt;&lt; d &lt;&lt; " " &lt;&lt; e &lt;&lt; " " &lt;&lt; f &lt;&lt; endl;
+	return 0;
+}</code></pre> <div class="p-3"><p class="font-weight-bold">
+                    出力結果</p> <pre class="border-0"><code>1 2 3
+1 2 3</code></pre></div></div></div><div class="card card-plain my-1"><!----> <!----> <div class="card-header">
+                サンプル3 (入力の組み合わせ)
+              </div> <!----> <div class="card-body"><div class="p-3"><p class="font-weight-bold">
+                    標準入力</p> <pre class="border-0"><code>yamada
+taro
+24</code></pre></div> <pre name="sample1" id="sample1" class="bg-light p-3"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main(){
+	string lastName, firstName;
+	int age;
+	cin &gt;&gt; lastName;
+	cin &gt;&gt; firstName;
+	cin &gt;&gt; age;
+
+	cout &lt;&lt; lastName &lt;&lt; " " &lt;&lt; firstName &lt;&lt; " is " &lt;&lt; age &lt;&lt; " years old!" &lt;&lt; endl;
+
+	return 0;
+}</code></pre> <div class="p-3"><p class="font-weight-bold">
+                    出力結果</p> <pre class="border-0"><code>yamada taro is 24 years old!</code></pre></div></div></div><div class="card card-plain my-1"><!----> <!----> <!----> <div class="card-header">
+                サンプル4 (入力の分散)
+              </div> <div class="card-body"><div class="p-3"><p class="font-weight-bold">
+                    標準入力</p> <pre class="border-0"><code>1 2 3</code></pre></div> <pre name="sample1" id="sample1" class="bg-light p-3"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main(){
+	int a, b, c;
+	cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+
+	cout &lt;&lt; a &lt;&lt; endl;
+	cout &lt;&lt; b &lt;&lt; endl;
+	cout &lt;&lt; c &lt;&lt; endl;
+	return 0;
+}</code></pre> <div class="p-3"><p class="font-weight-bold">
+                    出力結果</p> <pre class="border-0"><code>1
+2
+3</code></pre></div></div></div></div></div></div></div></div></div>
+
+
+
+
+
+  <footer class="footer pt-3 pb-1 text-primary bg-normal text-center">
+  <div class="container text-primary">
+    <h5 class="mt-0 mb-3 d-inline-block">2017 <a href="https://triple-four.com/" target="_blank">444 Inc.</a> all rights reserved</h5>
+  </div>
+</footer>
+  <form action="https://techful-programming.com/account/redirect" method="post" id="account-redirect">
+  <input type="hidden" id="id_password_set" name="password_set" value="0">
+  <input type="hidden" id="id_profile_completed" name="profile_completed" value="0">
+<input type="hidden" name="csrfmiddlewaretoken" value="rfl4zfV5KNdbQYLwD0DkkwkbB1kdiB05Zo7IgdQd3ov3NloWCvSCiG2eRQ87I2rh">
+</form>
+  
+<!--   Core JS Files   -->
+<script src="./TechFUL_09_files/jquery.min.js" type="text/javascript"></script>
+<script src="./TechFUL_09_files/popper.min.js" type="text/javascript"></script>
+<script src="./TechFUL_09_files/bootstrap.min.js" type="text/javascript"></script>
+<!-- Vue import -->
+<script src="./TechFUL_09_files/vue.min.js"></script>
+<!-- Axios import -->
+<script src="./TechFUL_09_files/axios.min.js"></script>
+<!-- Countdown by Vue.js -->
+<script src="./TechFUL_09_files/vue-countdown.js"></script>
+<!-- D3.js  -->
+<script src="./TechFUL_09_files/d3.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="./TechFUL_09_files/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="./TechFUL_09_files/nouislider.min.js" type="text/javascript"></script>
+<script src="./TechFUL_09_files/bootstrap-material-design.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="./TechFUL_09_files/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async="" defer="" src="./TechFUL_09_files/buttons.js"></script>
+<!-- now-ui-kit -->
+<script src="./TechFUL_09_files/now-ui-kit.js" type="text/javascript"></script>
+<!-- Dropzone -->
+<script src="./TechFUL_09_files/dropzone.min.js" type="text/javascript"></script>
+
+<script src="./TechFUL_09_files/common.js" type="text/javascript"></script>
+
+  
+<script>
+  $('#material-tabs').each(function () {
+    var $active, $content, $links = $(this).find('a');
+    $active = $($links[0]);
+    $active.addClass('active');
+    $content = $($active[0].hash);
+    $links.not($active).each(function () {
+        $(this.hash).hide();
+    });
+
+    $(this).on('click', 'a', function (e) {
+        $active.removeClass('active');
+        $content.hide();
+        $active = $(this);
+        $content = $(this.hash);
+        $active.addClass('active');
+        $content.show();
+        e.preventDefault();
+    });
+});
+  
+    const target = document.getElementById('target');
+    const targetView = document.getElementsByClassName('target-view')[0];
+    const langBtn = document.getElementById('langChange');
+    const langView = document.getElementById('langView');
+    const messageNotifications = document.getElementsByClassName('message-notification');
+    
+    const dataFromBase = {
+      core : {
+        token: 'rfl4zfV5KNdbQYLwD0DkkwkbB1kdiB05Zo7IgdQd3ov3NloWCvSCiG2eRQ87I2rh',
+      },
+      auth : {
+        userId : '17291',
+        userStatus: parseInt('1')
+      },
+      pages: {
+        log: {
+          'log_type': '1',
+          'log_save': 1,
+          'country': 'JP',
+          'city': 'hamamatsu',
+          'device': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
+          'path': '/user/event/session/c5z5IzMj/problem/coding/14637',
+          'page_name': 'event: coding_answer',
+        }
+      },
+      doms : {
+        redirectForm: document.getElementById('account-redirect')
+      },
+      post : {
+        config : {
+          headers:{
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type':'application / x-www-form-urlencoded',
+            'X-CSRFToken': 'rfl4zfV5KNdbQYLwD0DkkwkbB1kdiB05Zo7IgdQd3ov3NloWCvSCiG2eRQ87I2rh'
+            },
+          withCredentials:true,
+        },
+        fileConfig: {
+          headers:{
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type':'multipart/form-data',
+            'X-CSRFToken': 'rfl4zfV5KNdbQYLwD0DkkwkbB1kdiB05Zo7IgdQd3ov3NloWCvSCiG2eRQ87I2rh'
+            },
+          withCredentials:true,
+        }
+      }
+    };
+    
+    if(langBtn){
+      langBtn.addEventListener('mouseenter', () => {
+        langBtn.classList.add('show');
+        langView.style.display = "block";
+      });
+      
+      langBtn.addEventListener('mouseleave', () => {
+        langView.style.display = "none";
+      });
+    }
+    
+    if(target){
+      target.addEventListener('mouseenter', () => {
+        target.classList.add('show');
+        targetView.style.display = "block";
+      }, false);
+    }
+    
+    if(targetView){
+      targetView.addEventListener('mouseleave', () => {
+          targetView.style.display = "none";
+      }, false);
+    }
+    
+    function fadeOutNotification() {
+      console.log(messageNotifications)
+      if (messageNotifications.length){
+        for (i=1;i<messageNotifications.length+1;i++) {
+          let messageQuery = $('#message-notification' + String(i));
+          setTimeout(function() {
+            messageQuery.fadeOut(500);
+          }, 3000 * i);
+        };
+        
+      }
+    }
+
+    </script>
+    
+    <script>
+    fadeOutNotification();
+
+    function getProcessor(password_set, profile_completed, chat_sum){
+      let normalUserStatusList = [1,2]
+      if (password_set || profile_completed && normalUserStatusList.includes(dataFromBase.auth.userStatus)){
+            document.getElementById('id_password_set').value = password_set;
+            document.getElementById('id_profile_completed').value = profile_completed;
+            dataFromBase.doms.redirectForm.submit()
+          }
+        try {
+          const chatTag = document.getElementById('chat-tag');
+          if (chat_sum){
+            chatTag.setAttribute('data-count', chat_sum);
+          }
+        } catch (error){};
+    }
+    
+    // Change Language
+    let langChangeForm = document.getElementById('lang-change-form');
+    
+    function selectLangSubmit(formId, langId) {
+      document.getElementById(formId).language.value = langId
+      document.getElementById(formId).submit();
+    };
+
+    $.ajax({
+      headers: { "X-CSRFToken": dataFromBase.core.token },
+      type: 'POST',
+      url: '/functions/api/processor',
+      method: 'post',
+      data: dataFromBase.pages.log,
+      dataType:'json'
+    }).fail(function (error, status) {
+        console.log(error)
+    }).done(function (data) {
+      let response = JSON.parse(data);
+      let password_set      = response['password_set'];
+      let profile_completed = response['profile_completed'];
+      const chatSum        = response['chat_sum']
+      getProcessor(password_set, profile_completed, chatSum);
+    });
+    
+    setTimeout(() => {
+      $("#navbarNavDropdown").removeClass("show");
+    }, 1000);
+    
+    </script>
+
+  
+<script src="./TechFUL_09_files/clipboard.min.js"></script>
+<script src="./TechFUL_09_files/vue-clipboard.min.js"></script>
+<script src="./TechFUL_09_files/index.min.js"></script>
+<script src="./TechFUL_09_files/loader.js"></script>
+<script async="" src="./TechFUL_09_files/MathJax.js"></script>
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea'],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+
+</script>
+<script>
+  const callMathJax = () => {
+    setTimeout(() => {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      var QUEUE = MathJax.Hub.queue;
+    }, 2000);
+  };
+
+  const booleanConverter = (value) => {
+    return (value === "True") ? true : false;
+  };
+
+  function copyToClipboard(num) {
+    let i = document.getElementsByClassName(`samplecase${num}`)[0];
+    let str = i.innerText;
+    const el = document.createElement('textarea');
+    el.value = str;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  };
+
+  // 検定試験タイマー用の処理
+  Vue.component(VueCountdown.name, VueCountdown);
+
+  const Count = new Vue({
+    el: '#time',
+    delimiters: ['[[', ']]'],
+    data: function () {
+      var endtime = parseInt('None');
+      var extendTime = parseInt('None');
+      var leftTime = extendTime - endtime;
+      var time = (endtime < 0) ? extendTime : endtime;
+
+      return {
+        forceTrigger: booleanConverter('None'),
+        counting: false,
+        time: time,
+        now: new Date().getTime(),
+        trigger: true,
+        unOpenedMission: 0,
+        pageStatus: parseInt('3'),
+        endtime: endtime,
+        forceEndtime: leftTime,
+      };
+    },
+    methods: {
+      transform(props) {
+        Object.entries(props).forEach(([key, value]) => {
+          const digits = value < 10 ? `0${value}` : value; // 0 追加
+          word = value < 2 ? key.replace(/s$/, '') : key;
+          props[key] = `${digits}`;
+        });
+        return props;
+      },
+      handleCountdownEnd: function () {
+        (this.forceTrigger) ? this.forceEndEvent(): this.isChangeBgColor();
+        this.forceTrigger = true;
+        this.time = this.forceEndtime;
+        this.isChangeBgColor();
+      },
+      startCountdown: function () {
+        console.log('start!');
+        console.log(this.forceTrigger);
+        if (this.forceTrigger) {
+          this.isChangeBgColor()
+        };
+      },
+      isChangeBgColor: function () {
+        console.log('running!!');
+        setTimeout(() => {
+          $('.clock-top-wrapper').css({
+            'background-color': '#8e0101',
+            'border-color': '#8e0101'
+          });
+        }, 0);
+      },
+      forceEndEvent: function () {
+        console.log('終了');
+        $("#forceBtn").click();
+      },
+    },
+  });
+
+  const baseData = {
+    // # 0: Challenge, 1: Practice, 2: Learning, 3: Event, 4: Exam, 5: Admin
+    pageStatus: parseInt('3'),
+    default_code_url: '/user/problem/14637/api/get_default_code?session_id=6935',
+    sample_cases: '/user/problem/14637/api/get_samplecase?page_type=3',
+    problem_info: '/user/problem/14637/api/get_problem_info?session_id=6935&amp;page_type=3',
+    selected_code_url: '/user/problem/14637/api/get_selected_code',
+    editorPath: "/static/assets/js/test_editor.js",
+    sample_codes: '/user/problem/14637/api/get_samplecode?pg_lang_id=2',
+    tutorial_url: '/account/tutorial/api',
+    compile_result_url: '/user/compile/14637/api/get_compile_result',
+    get_inspect_list: '/user/problems/14637/inspects/api',
+    format_check_url: 'None',
+    get_image_url: '/functions/api/get_signed_url/axios',
+    config: {
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'Content-Type': 'application / x-www-form-urlencoded',
+        'X-CSRFToken': 'rfl4zfV5KNdbQYLwD0DkkwkbB1kdiB05Zo7IgdQd3ov3NloWCvSCiG2eRQ87I2rh'
+      },
+      withCredentials: true,
+    },
+    params: {
+      'files': []
+    },
+    param_for_compile: {
+      'start_compile': 1,
+      'session_key': 'aryq03kj6r93q92jy0ainu35dq8sbuis',
+      'session_id': parseInt('6935'),
+      'src_code': '',
+      'pg_lang_id': 'PG言語のID',
+      'pg_lang_name': 'PG言語の名前',
+      // 1 がサンプルケース, 2 がテストケース, 3が管理者の検証
+      'case_option': 1,
+      // 1 が新コンパイラ、2 が旧型
+      'compile_option': 1,
+      'count': 0,
+    },
+    url_for_compile: '/user/compile/14637/api/POST',
+  };
+
+
+  let tutorial = new Vue({
+    data: {
+      status: 0,
+      zIndex: 'zIndex',
+      exception: 'zIndex-exception',
+    },
+    created: function () {
+      asynchronous(baseData.tutorial_url)
+        .then(res => {
+          this.isCheckTutorialStatus(res.data);
+        });
+    },
+    methods: {
+      // 1. チュートリアルを見終わったか、途中か、見てないか
+      isCheckTutorialStatus: function (num) {
+        if (num === 1) {
+          root.tutorialStatus = true;
+          this.status = num;
+        };
+      },
+      stepForward: function (num) {
+        this.status = num;
+        if (num === 2) {
+          // 画面を動的に動かす処理
+          this.scroolPage(document.getElementsByClassName('card-top')[0]);
+        };
+        if (num === 3) {
+          this.changeLanguage();
+          // エディタをread onlyにする処理
+          editor.updateOptions({
+            readOnly: true
+          })
+        };
+        if (num === 4) {
+          // 意図しないタイミングでsubmitさせない処理
+          monacoEditor.buttonStatus = true;
+        };
+        if (num === 5) {
+          // テストケース用にコンパイラーを回す処理
+          monacoEditor.submitTestCases(2);
+          this.scrollWindowBottom;
+          this.status = 0;
+        };
+      },
+      scroolPage: function (el) {
+        el.scrollTop = el.scrollHeight;
+        var rect = el.getBoundingClientRect();
+        var elemtop = rect.top + window.pageYOffset;
+        document.documentElement.scrollTop = elemtop;
+      },
+      scrollWindowBottom: function () {
+        var element = document.documentElement;
+        var bottom = element.scrollHeight - element.clientHeight;
+        window.scroll(0, bottom);
+      },
+      changeLanguage: function () {
+        const e = new Event("change");
+        const pg = document.getElementById('pg_id');
+        Array.from(pg.options).forEach(el => {
+          if (parseInt(el.value) === 8) {
+            el.selected = true;
+          }
+        });
+        pg.dispatchEvent(e);
+        pg.disabled = true;
+      }
+    },
+  });
+
+  const appendScript = (URL) => {
+    let element = document.createElement('script');
+    element.src = URL;
+    document.body.appendChild(element);
+  };
+
+  const renewImages = (images) => {
+    let arr = Object.keys(images).map(key => {
+      return images[key].src;
+    });
+    baseData.params = arr.slice(0, -2);
+    postAsynchronous(baseData.get_image_url, baseData.params, baseData.config)
+      .then(res => {
+        for (const [key, value] of JSON.parse(res.data).files.entries()) {
+          images[key].src = value
+        };
+      });
+  };
+
+  function postAsynchronous(url, param, config) {
+    return new Promise((resolve, reject) => {
+      axios.post(url, param, config)
+        .then(res => {
+          resolve(res);
+        })
+        .catch(err => {
+          reject(err);
+        });
+    })
+  };
+
+  function asynchronous(url) {
+    return new Promise((resolve, reject) => {
+      axios.get(url)
+        .then(res => {
+          resolve(res);
+        })
+        .catch(error => {
+          reject(error);
+        })
+    });
+  };
+
+  function asyncWithParam(url, data) {
+    return new Promise((resolve, reject) => {
+      axios.get(url, {
+          params: {
+            pg_lang_id: data
+          }
+        })
+        .then(res => {
+          resolve(res);
+        })
+        .catch(error => {
+          reject(error);
+        })
+    });
+  };
+
+  const postAsyncAll = (data_1, data_2, data_3) => {
+    return Promise.all([data_1, data_2, data_3])
+      .then(res => {
+        console.log('リクエスト用に必要なデータ取得完了!');
+      });
+  };
+
+  const changeRequestType = num => {
+    baseData.param_for_compile["case_option"] = num;
+  };
+
+  const isShowCompileSpin = (bool) => {
+    testCases.isActive = bool;
+  };
+
+  const scrollWindow = (elem) => {
+    setTimeout(() => {
+      let element = document.getElementById(elem);
+      let rect = element.getBoundingClientRect();
+      let elemtop = rect.top + window.pageYOffset;
+      document.documentElement.scrollTop = elemtop;
+    }, 0);
+  };
+
+
+
+  /*==================================
+  サブヘッダー用クラス
+  ====================================*/
+  const subHeader = new Vue({
+    el: '#navHeader',
+    delimiters: ['[[', ']]'],
+    data: {
+      buttonUrls: [],
+    },
+    methods: {
+
+    }
+  });
+
+  /*==================================
+   サンプルコード用クラス
+  ====================================*/
+  const sampleCodes = new Vue({
+    el: '#exampleCode',
+    delimiters: ['[[', ']]'],
+    data: {
+      sampleData: [],
+    },
+  });
+
+
+
+  /*==================================
+   模範コード用クラス
+  ====================================*/
+  const exampleAnswer = new Vue({
+    el: '#exampleAnswer',
+    delimiters: ['[[', ']]'],
+    data: {
+      exampleCodes: [],
+    },
+  });
+
+
+  /*==================================
+  root インスタンス
+  ====================================*/
+  const root = new Vue({
+    data: {
+      testcases: 0,
+      passed: 0,
+      pgLangueages: [],
+      tutorialStatus: false,
+      code: '',
+      pgId: 0,
+      lang: '',
+      index: 0,
+      status: true,
+      submitResult: [],
+      buttonInfo: [],
+      sampleAnswer: [],
+      runtimeerror: 0,
+      problemType: true,
+    },
+    computed: {},
+    methods: {},
+    watch: {
+      pgLangueages: {
+        handler: function () {
+          appendScript(baseData.editorPath);
+        },
+        deep: true,
+      },
+      pgId: {
+        handler: function () {
+          asyncWithParam(baseData.sample_codes, this.pgId)
+            .then(res => {
+              sampleCodes.sampleData = res.data;
+            })
+            .catch(err => {
+              console.error(err);
+            });
+        },
+        deep: true,
+      },
+      submitResult: {
+        // 正解したテストケース数をインクリメント.
+        handler: function () {
+          this.passed = 0;
+          for (var k in this.submitResult) {
+            (this.submitResult[k]["status"] === 1) ? this.passed++: '';
+            //run time error数をカウント → １個以上なら注意文表示
+            (this.submitResult[k]["status"] === 4) ? this.runtimeerror++: '';
+          };
+          // リコメンド問題の選別ロジック
+          if (this.passed === this.testcases) {
+            this.index = 0;
+          } else if (this.testcases - this.passed === 1) {
+            this.index = 1;
+          } else {
+            this.index = 2;
+          };
+        },
+        deep: true,
+      },
+    }
+  });
+
+  /*==================================
+  タイトル & 問題文用クラス
+  ====================================*/
+  const statement = new Vue({
+    el: '#question',
+    delimiters: ['[[', ']]'],
+    data: {
+      isActive: true,
+      samplecases: [],
+      imageFiles: $("#question_text img"),
+      favoriteStatus: false,
+      exampleAnswer: [],
+    },
+    created: function () {
+      asynchronous(baseData.default_code_url)
+        .then(res => {
+          let data = JSON.parse(res.data);
+          root.code = data.src_code;
+          root.pgId = data.pg_lang_id;
+          root.lang = data.pg_lang_name_monaco;
+          root.status = data.is_editable;
+          root.lineInfo = data.lines;
+          this.favoriteStatus = data.is_favorite;
+          exampleAnswer.exampleCodes = data.example_answer;
+        })
+        .catch(err => {
+          console.log(err);
+          alert("通信に失敗しました。もう一度画面読み込みを行ってください。");
+        });
+    },
+    mounted: function () {
+      // the DOM. ¯\_(ツ)_/¯
+      this.$nextTick(() => {
+        const questionImageFiles = $("#question_text img");
+        const sampleImageFiles = $("#samplecase_text img");
+        if (questionImageFiles.length > 0) {
+          renewImages(questionImageFiles);
+        };
+        if (sampleImageFiles.length > 0) {
+          renewImages(sampleImageFiles);
+        }
+        callMathJax();
+      });
+    },
+    methods: {
+      onCopy: function (e) {
+        alert(e);
+        console.log('You just copied: ' + e.text);
+      },
+      onError: function (e) {
+        console.log('Failed to copy texts');
+      },
+      isFavorite: function (bool, url, info) {
+        this.favoriteStatus = bool;
+
+        let param = {
+          problem_id: parseInt('14637'),
+          [info]: 1
+        };
+
+        postAsynchronous(url, param, baseData.config)
+          .then(res => {
+            console.log(res);
+          });
+      }
+    },
+  });
+
+
+  /*==================================
+  テストケース用クラス
+  ====================================*/
+  const testCases = new Vue({
+    el: '#js-test-cases',
+    delimiters: ['[[', ']]'],
+    data: {
+      cases: [],
+      score: [],
+      isActive: false,
+      isPush: true,
+    },
+    mounted: function () {},
+    methods: {
+      isSetActiveStatus(index) {
+        return (index === 0) ? 'active' : '';
+      },
+      isSetIcon(data) {
+        return (data === 1) ? 'icofont icofont-check-alt mr-2 text-primary fa-lg' :
+          'icofont icofont-close-line mr-2 text-danger fa-lg';
+      },
+      isSetColor(data) {
+        return (data === 1) ? 'text-primary' : 'text-danger';
+      },
+      isSetDnone(data) {
+        return (data === 1) ? '' : 'd-none';
+      },
+      isSetBorder(data) {
+        return (data === 1) ? 'success-testcase' : 'fail-testcase';
+      },
+
+    },
+    watch: {
+      isActive: {
+        immediate: true,
+        handler: function (newVal, old) {
+          (newVal) ? scrollWindow('compiling-prossing'): '';
+        },
+        deep: true,
+      },
+    }
+  });
+
+  const checkUndefined = (element, data, text) => {
+    (typeof data == "undefined") ? '' : element.push(data[text]);
+  };
+
+  const answer_statuses = {
+    AC: '',
+    WA: '',
+    CE: 'コンパイル中にエラーが発生しました。\nサンプルケースで結果を確認し、エラーを取り除きましょう。',
+    RE: '実行中にエラーが発生しました。\nサンプルケースで結果を確認し、エラーを取り除きましょう。',
+    TLE: '実行時間制限(5秒)オーバーです。\nソースコードを見直して、実行時間を短くしましょう。',
+    MLE: 'メモリ制限オーバーです。\nソースコードを見直して、使用メモリを減らしましょう。',
+    SE: 'ジャッジシステムでエラーが発生しました。\n再度提出してみてエラーが続くようであればお問い合わせ下さい。',
+  };
+
+  /*==================================
+  サンプルケース用クラス
+  ====================================*/
+  function getCompileResults(el) {
+    // リクエスト用に必要なデータ取得完了! 非同期スタート
+    return new Promise((resolve, reject) => { // #1
+      return Promise.all([getCode(), getLanguageId(), getLanguageName()])
+        .then(res => {
+          resolve();
+        }).catch(error => {
+          reject(error);
+        })
+    }).then((msg) => { // #2 トリガー成功!!
+      return new Promise((resolve, reject) => {
+        axios.post(baseData.url_for_compile, baseData.param_for_compile, baseData.config)
+          .then(function (res) {
+            baseData.param_for_compile["src_code"] = "";
+            resolve(res);
+          }).catch(error => {
+            if (!error.response) {
+              alert('ネットワーク接続がありません。')
+            } else {
+              console.log(error)
+            }
+            reject(error);
+          })
+      });
+    }).then((res) => { // #3
+      return new Promise((resolve, reject) => {
+
+        function fetch(url, data) {
+          axios.get(url, data)
+            .then(function (res) {
+              compilingVue.compilingText = "採点中"
+              compilingVue.compilingSampleText = "テスト中"
+              compilingVue.isError = false
+              switch (res.data[0]['is_done']) {
+                case 0:
+                  // ok
+                  el.cases = res.data[1]["result"];
+                  baseData.param_for_compile["session_key"] = res.data[2]["session_key"];
+                  resolve(res);
+                  break
+                case 1:
+                  // fetch again...
+                  var i = setTimeout(() => {
+                    baseData.param_for_compile["count"]++;
+                    fetch(url, data);
+                  }, 1000);
+                  i = null;
+                  break
+                case 2:
+                  // force shutdown triggerd when more than 50times fetch occuer.
+                  baseData.param_for_compile["session_key"] = res.data[2]["session_key"];
+                  baseData.param_for_compile["count"] = 0;
+                  reject();
+                  break
+              };
+            })
+            .catch(error => {
+              // error now ¯\_(ツ)_/¯
+              console.error(error);
+              if (!error.response) {
+                compilingVue.compilingText = 'ネットワークへの接続を試みています'
+                compilingVue.compilingSampleText = "ネットワークへの接続を試みています"
+                compilingVue.isError = true
+                setTimeout(() => {
+                  baseData.param_for_compile["count"]++;
+                  fetch(url, data);
+                }, 1000);
+              } else {
+                reject(error)
+              }
+            });
+        };
+        fetch(baseData.compile_result_url, {
+          params: baseData.param_for_compile
+        });
+      })
+    }).then((res) => { // #4
+      return new Promise((resolve, reject) => {
+        resolve(res);
+      })
+    }).finally((res) => {
+      // 処理完了
+      console.log('done...');
+    });
+  };
+
+  const sampleCases = new Vue({
+    el: '#casesTop',
+    delimiters: ['[[', ']]'],
+    data: {
+      isActive: true,
+      cases: [],
+      show: '',
+      isPush: true,
+      status: (baseData.pageStatus === 5) ? 3 : 1,
+      testPassed: -1,
+      formatCheckPassed: -1,
+    },
+    mounted: function () {
+      asynchronous(baseData.sample_cases)
+        .then(res => {
+          this.cases = res.data;
+          statement.samplecases = res.data;
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    },
+    methods: {
+      submitSumpleCases: function (num) {
+        compilingVue.compilingSampleText = "テスト中"
+        this.show = false;
+        this.isPush = true;
+        monacoEditor.buttonStatus = true;
+        compilingVue.is_error = false;
+        var $sampleCases = this;
+
+        // コンパイラに送信するカウントをリセット
+        baseData.param_for_compile["count"] = 0;
+
+        changeRequestType(num);
+        getCompileResults($sampleCases)
+          .finally(() => {
+            this.show = true;
+            this.isPush = false;
+            monacoEditor.buttonStatus = false;
+
+            //テスト通過数カウント
+            this.testPassed = 0;
+            this.cases.forEach(e => {
+              if (e.status === 1) {
+                this.testPassed++;
+              }
+            });
+          });
+
+
+      },
+      formatCheck: function () {
+        compilingVue.compilingSampleText = "フォーマットチェック中";
+        this.show = false;
+        this.isPush = true;
+        monacoEditor.buttonStatus = true;
+        compilingVue.is_error = false;
+
+        asynchronous(baseData.format_check_url)
+          .then(res => {
+            check = res.data
+            for (let i = 0; i < this.cases.length; i++) {
+              this.cases[i].status = check[i].status
+              this.cases[i].status_message = check[i].status_message
+              this.cases[i].output = check[i].output
+            }
+            this.show = true;
+            this.isPush = false;
+            monacoEditor.buttonStatus = false;
+            //フォーマットチェック通過数カウント
+            this.formatCheckPassed = 0;
+            this.cases.forEach((e) => {
+              if (e.status === 1) {
+                this.formatCheckPassed++;
+              }
+            });
+          })
+      },
+      countWordsNumber: function (str) {
+        return (str.length === 0) ? 'd-none' : '';
+      },
+    }
+  });
+
+
+  function isCountWordsNum(num) {
+    let i = document.getElementsByClassName(`samplecase${num}`)[0];
+    let str = i.innerHTML;
+    return (str.length === 0) ? 'd-none' : '';
+  };
+
+  // コンパイル結果を取得する処理
+  function isGetCompileResult(url, params) {
+    return new Promise((resolve, reject) => {
+      axios.get(url, {
+          params: params
+        })
+        .then(function (res) {
+          resolve(res);
+        })
+        .catch(error => reject(error));
+    });
+  };
+
+  const getCode = () => {
+    return new Promise((resolve, reject) => {
+      baseData.param_for_compile["src_code"] = editor.getValue();
+      resolve();
+    });
+  };
+
+  const getLanguageName = () => {
+    return new Promise((resolve, reject) => {
+      baseData.param_for_compile["pg_lang_name"] = root.lang;
+      resolve();
+    });
+  };
+
+  const getLanguageId = () => {
+    return new Promise((resolve, reject) => {
+      baseData.param_for_compile["pg_lang_id"] = root.pgId;
+      resolve();
+    });
+  };
+
+
+  /*==================================
+  エディタ用クラス
+  ====================================*/
+  const monacoEditor = new Vue({
+    el: '#js-editor',
+    delimiters: ['[[', ']]'],
+    data: {
+      isActive: true,
+      buttonStatus: true,
+      pgLangueages: [],
+    },
+    mounted: function () {
+      asynchronous(baseData.problem_info)
+        .then(res => {
+          let parsedRes = JSON.parse(res.data);
+          root.testcases = parsedRes.testcase_length;
+          root.pgLangueages = parsedRes.pg_langs;
+          this.pgLangueages = parsedRes.pg_langs;
+          subHeader.buttonUrls = parsedRes.hrefs;
+          this.buttonStatus = false;
+          testCases.isPush = false;
+          sampleCases.isPush = false;
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    },
+    methods: {
+      reLocation: function (bool) {
+        this.isActive = bool;
+        relocation(bool);
+      },
+      onChangeLang: function (event) {
+        resetLanguageId(event.target.value);
+        // 変更された言語コードの取得
+        asyncWithParam(baseData.selected_code_url, event.target.value)
+          .then(res => {
+            const info = JSON.parse(res.data);
+            generateEditor(info.template, info.name_monaco);
+          })
+          .catch(err => {
+            console.error(err);
+          });
+
+        // サンプルコードの取得
+        asyncWithParam(baseData.sample_codes, event.target.value)
+          .then(res => {
+            sampleCodes.sampleData = res.data;
+          })
+          .catch(err => {
+            console.error(err);
+          });
+      },
+      submitTestCases: function (num) {
+        sampleCases.isPush = true;
+        this.buttonStatus = true;
+
+        //run time errorのカウントをリセット
+        root.runtimeerror = 0;
+
+        // コンパイラに送信するカウントをリセット
+        baseData.param_for_compile["count"] = 0;
+
+        changeRequestType(num);
+        isShowCompileSpin(true);
+        let $testCases = testCases;
+        $testCases.cases = [];
+        $testCases.score = [];
+        getCompileResults($testCases)
+          .then(res => {
+            root.submitResult = res.data[1].result;
+            $testCases.score.push(res.data[3].score_detail);
+            // リコメンド問題が存在する時のみ以下の処理が発火
+            if (res.data[4].recommend.length) {
+              recommendProblems.problems = res.data[4].recommend;
+            };
+          })
+          .finally(() => {
+            isShowCompileSpin(false);
+            this.buttonStatus = false;
+            sampleCases.isPush = false;
+            if (root.tutorialStatus) {
+              tutorial.status = 6;
+            }
+          })
+      },
+    },
+  });
+
+  const resetLanguageId = id => {
+    root.pgId = id;
+  };
+
+
+  /*==================================
+  おすすめ問題用 & 正解テストケース関連クラス
+  ====================================*/
+  const recommendProblems = new Vue({
+    el: '#js-recommend-info',
+    delimiters: ['[[', ']]'],
+    data: {
+      passed: 0,
+      problems: [],
+    },
+    mounted: function () {},
+  });
+
+
+  /*==================================
+  コンパイリングUI関連クラス
+  ====================================*/
+  const compilingVue = new Vue({
+    el: '#compiling-prossing',
+    delimiters: ['[[', ']]'],
+    data: {
+      isActive: false,
+      isStatus: true,
+      isError: false,
+      compilingText: "採点中",
+      compilingSampleText: "テスト中",
+    },
+    mounted: function () {},
+  });
+
+
+  // 配置変換関数
+  const relocation = bool => {
+    sampleCases.isActive = bool;
+    statement.isActive = bool;
+    monacoEditor.isActive = bool;
+  };
+
+  function return_page() {
+    if (history.length > 1) {
+      history.back()
+    } else {
+      window.location.href = subHeader.buttonUrls.back
+    }
+  }
+
+  ""
+</script>
+
+
+  <!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o5ux1');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+
+
+
+<iframe id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left" src="./TechFUL_09_files/saved_resource.html"></iframe><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div><script src="./TechFUL_09_files/test_editor.js"></script></body></html>
